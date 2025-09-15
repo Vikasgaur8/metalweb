@@ -724,3 +724,259 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-slider-container {
+  position: relative;
+  height: 80vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slide-box {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  /* border-radius: 2rem; */
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s cubic-bezier(.77,0,.18,1);
+  animation: slideUpDown 3s linear infinite;
+  z-index: 0;
+}
+.hero-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+@keyframes slideUpDown {
+  0%    { transform: translateY(0px);}
+  /* 100%  { transform: translateY(-40px);} */
+}
+
+/* Navigation Buttons */
+.hero-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: linear-gradient(135deg, #e91e63 30%, #6a1b9a 60%, #ff5722 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 1px 10px rgba(233,30,99,0.10);
+  opacity: 0.92;
+  cursor: pointer;
+  transition: background .3s, box-shadow .3s, transform .18s;
+}
+.hero-prev { left: 2.5%; }
+.hero-next { right: 2.5%; }
+.hero-nav-btn:hover {
+  background: linear-gradient(135deg, #ff5722 20%, #e91e63 80%);
+  box-shadow: 0 3px 18px rgba(255,87,34,0.18);
+  transform: scale(1.1);
+}
+
+/* Dot indicators */
+.hero-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
+  display: flex;
+  gap: 18px;
+}
+.indicator {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 2px solid #6a1b9a;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: .65;
+  transition: background .3s, border .3s, transform .2s;
+}
+.indicator.active {
+  background: linear-gradient(135deg, #e91e63, #6a1b9a, #ff5722);
+  border-color: #ff5722;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Responsive Button/Indicator Sizing */
+@media (max-width: 768px) {
+  .hero-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .hero-indicators { gap: 10px; }
+  .indicator { width: 10px; height: 10px; }
+}
+
+/* Hero Section Gradient Overlay */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  background: linear-gradient(115deg, #6a1b9a 66%, #e91e63 93%, #ff5722 100%);
+  opacity: .36;
+}
+.hero-content {
+  position: relative;
+  z-index: 11;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #7656d6;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  letter-spacing: 0.15em;
+  font-size: 22px;
+  overflow: hidden; 
+} */
+
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+  overflow: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slides {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -100vw; 
+  width: 10000px;
+}
+
+.slides.shifting {
+  transition: left .4s ease-out;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  position: relative;
+  background: #FFCF47;
+  border-radius: 0;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.slider.loaded {
+  .slide:nth-child(2),
+  .slide:nth-child(7) { background: #FFCF47 }
+  .slide:nth-child(1),
+  .slide:nth-child(6) { background: #7ADCEF }
+  .slide:nth-child(3) { background: #3CFF96 }
+  .slide:nth-child(4) { background: #a78df5 }
+  .slide:nth-child(5) { background: #ff8686 }
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  margin-top: -30px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.prev,
+.next {
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.prev {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+  left: 20px;
+}
+
+.next {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+  right: 20px;
+}
+
+.prev:active,
+.next:active {
+  transform: scale(.8);
+}
