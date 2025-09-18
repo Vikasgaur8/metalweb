@@ -684,3 +684,89 @@ function slide(wrapper, items, prev, next) {
 }
 
 slide(slider, sliderItems, prev, next);
+
+
+const track = document.querySelector(".carousel-track");
+const indSlides = Array.from(track.children);
+const slideCount = indSlides.length;
+
+let slideWidth = indSlides[0].offsetWidth + 16; // Slide width + margin
+
+// Clone first and last slides for seamless looping
+const firstClone = indSlides[0].cloneNode(true);
+const lastClone = indSlides[slideCount - 1].cloneNode(true);
+
+track.appendChild(firstClone);
+track.insertBefore(lastClone, indSlides[0]);
+
+const allSlides = Array.from(track.children);
+const totalSlides = allSlides.length;
+
+let currentPos = 1; // Start at first original slide
+
+// Center track based on current position
+function setPosition(pos) {
+  const offset =
+    -slideWidth * pos +
+    (track.parentElement.offsetWidth - indSlides[0].offsetWidth) / 2;
+  track.style.transform = `translateX(${offset}px)`;
+}
+
+// Update active slide styling
+function updateActive() {
+  allSlides.forEach((slide) => slide.classList.remove("active"));
+  allSlides[currentPos].classList.add("active");
+}
+
+// Initialize position and active slide
+setPosition(currentPos);
+updateActive();
+
+// Move to slide with transition
+function moveToSlide(pos) {
+  currentPos = pos;
+  track.style.transition = "transform 0.6s cubic-bezier(.42,0,.58,1)";
+  setPosition(currentPos);
+  updateActive();
+}
+
+// Slide to next image
+function nextSlide() {
+  if (currentPos >= totalSlides - 1) return;
+  moveToSlide(currentPos + 1);
+}
+
+// Handle transition end for seamless loop without jump
+track.addEventListener("transitionend", () => {
+  if (currentPos === totalSlides - 1) {
+    track.style.transition = "none";
+    currentPos = 1;
+    setPosition(currentPos);
+    track.offsetHeight; // force reflow
+    setTimeout(() => {
+      track.style.transition = "transform 0.6s cubic-bezier(.42,0,.58,1)";
+      updateActive();
+    }, 0);
+  } else if (currentPos === 0) {
+    track.style.transition = "none";
+    currentPos = totalSlides - 2;
+    setPosition(currentPos);
+    track.offsetHeight;
+    setTimeout(() => {
+      track.style.transition = "transform 0.6s cubic-bezier(.42,0,.58,1)";
+      updateActive();
+    }, 0);
+  }
+});
+
+// Update slide width and position on resize
+window.addEventListener("resize", () => {
+  slideWidth = indSlides[0].offsetWidth + 16;
+  setPosition(currentPos);
+  track.style.transition = "none";
+});
+
+// Auto slide every 1800ms (adjust as needed)
+setInterval(() => {
+  nextSlide();
+}, 1800);
