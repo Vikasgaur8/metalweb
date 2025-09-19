@@ -636,6 +636,7 @@ body {
         width: 100%;
         text-align: center;
         justify-content: center;
+        padding: var(--spacing-md) 0;
     }
 
     .social-links {

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail | JAINAM FERRO ALLOYS</title>
+    <!-- Bootstrap & Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Animated Header & Social Header -->
+    <div class="animated-header"><div class="animated-line"></div></div>
+    <div class="social-header">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="social-links">
+                    <span>Follow us on</span>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg main-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/OnlyLogo.jpeg" alt="JSA" class="brand-logo logo-img">
+                <div class="brand-text">
+                    <h2>JAINAM FERRO ALLOYS</h2>
+                    <p>An ISO 9001:2015 Certified Company</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">Company</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Quality</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3">Loading product details...</p>
+    </div>
+
+    <!-- Error Message -->
+    <div class="error-message" id="errorMessage">
+        <h3>Product Not Found</h3>
+        <p>The requested product could not be found.</p>
+        <a href="index.html#products" class="btn btn-primary-custom">Back to Products</a>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="section product-detail-section py-5" id="productDetailSection">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <!-- Product Image + Gallery Modal -->
+                    <div class="product-image shadow-lg rounded-4 overflow-hidden position-relative">
+                        <img id="product-image" src="" alt="" class="img-fluid w-100">
+                        <button class="btn btn-outline-custom position-absolute" style="bottom:20px; right:20px;" id="viewGallery">
+                            <i class="fas fa-search-plus"></i> View Gallery
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-info">
+                        <h1 id="product-title" class="section-title text-start mb-3"></h1>
+                        <p id="product-desc" class="lead text-secondary mb-4"></p>
+                        <ul id="product-features" class="list-unstyled mb-4">
+                            <!-- Features dynamically inserted here -->
+                        </ul>
+                        <div class="d-flex gap-3">
+                            <a href="index.html#contact" class="btn btn-primary-custom Enquirebtn"><i class="fas fa-paper-plane"></i> Enquire Now</a>
+                            <a href="index.html#products" class="btn btn-outline-custom">Back to Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Specifications Table -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-3">Technical Specifications</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Specification</th>
+                                </tr>
+                            </thead>
+                            <tbody id="product-spec-table">
+                                <!-- Specs dynamically inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="mb-3">Product Features</h3>
+                    <ul class="list-group list-group-flush" id="productFeaturesList">
+                    <!-- Product feature dynamically inserted here -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Gallery Modal (Bootstrap) -->
+            <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content rounded-4">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="galleryModalLabel">Product Image Gallery</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row g-3" id="gallery-images">
+                                <!-- Gallery images dynamically inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="navbar-brand mb-3">
+                        <img src="./images/OnlyLogo.jpeg" alt="JAINAM FERRO ALLOYS Logo" class="brand-logo logo-img">
+                        <div class="brand-text">
+                            <h2 style="color: var(--secondary-color); font-size: var(--font-size-xl)">JAINAM FERRO ALLOYS</h2>
+                            <p style="color: rgba(255,255,255,0.8);">An ISO 9001:2015 Certified Company</p>
+                        </div>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8);">Leading manufacturer of stainless steel, carbon steel, and alloy steel products. Trusted for precision engineering solutions.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Quality</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="?product=product1">Stainless Steel Tubes</a></li>
+                        <li><a href="?product=product2">Carbon Steel Pipes</a></li>
+                        <li><a href="?product=product3">Alloy Steel Products</a></li>
+                        <li><a href="?product=product4">Cold Drawn Pipes</a></li>
+                        <li><a href="?product=product5">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h5>Contact Info</h5>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span>123 Industrial Area, Steel City</span></div>
+                    <div class="contact-item"><i class="fas fa-phone"></i> <span>+91 1234567890</span></div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i> <span>info@sailcometal.com</span></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JAINAM FERRO ALLOYS. All rights reserved. Designed for excellence in steel manufacturing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Products Database - Expanded with more products
+        const productsDatabase = {
+                product1: {
+                    id: "product1",
+                    name: "Stainless Steel Tube",
+                    image: "./images/screws.jpg",
+                    description:
+                        "High-grade stainless steel tubes manufactured for industrial applications. Corrosion-resistant, highly durable, customizable sizing.",
+                    features: [
+                        "Material: Stainless Steel 304/316",
+                        'Diameter: 1/2" to 6"',
+                        "Length: Up to 12 meters",
+                        "Surface Finish: Polished/Matte",
+                        "Certifications: ISO 9001:2015",
+                    ],
+                    specs: [
+                        { parameter: "Grade", specification: "304, 316, 321" },
+                        { parameter: "Outside Diameter", specification: "12 mm - 152 mm" },
+                        { parameter: "Wall Thickness", specification: "0.50 mm - 4.00 mm" },
+                        { parameter: "Length", specification: "2 m - 12 m" },
+                        { parameter: "Finish", specification: "Polished, Matte" },
+                        { parameter: "Standard", specification: "ASTM A312, A213" },
+                    ],
+                    gallery: ["./images/screws.jpg", "./images/pipes.jpg", "./images/bars.jpg"],
+                    productFeatures: [
+                        "Excellent corrosion resistance",
+                        "High mechanical strength",
+                        "Custom lengths available",
+                        "Suitable for high-pressure systems",
+                    ],
+                },
+                product2: {
+                    id: "product2",
+                    name: "Carbon Steel Pipe",
+                    image: "./images/pipes.jpg",
+                    description:
+                        "Premium quality carbon steel pipes for structural applications. Durable and cost-effective solution for various industrial needs.",
+                    features: [
+                        "Material: Carbon Steel A106/A53",
+                        'Diameter: 1" to 8"',
+                        "Length: Up to 10 meters",
+                        "Surface Finish: Galvanized",
+                        "Certifications: ISO 14001",
+                    ],
+                    specs: [
+                        { parameter: "Grade", specification: "A106, A53, API 5L" },
+                        { parameter: "Outside Diameter", specification: "15 mm - 200 mm" },
+                        { parameter: "Wall Thickness", specification: "1.00 mm - 5.00 mm" },
+                        { parameter: "Length", specification: "3 m - 10 m" },
+                        { parameter: "Finish", specification: "Galvanized, Black" },
+                        { parameter: "Standard", specification: "API 5L, ASTM A53" },
+                    ],
+                    gallery: ["./images/pipes.jpg", "./images/bars.jpg", "./images/screws.jpg"],
+                    productFeatures: [
+                        "Excellent corrosion resistance111",
+                        "High mechanical strength11",
+                        "Custom lengths available",
+                        "Suitable for high-pressure systems",
+                    ],
+                },
+                product3: {
+                    id: "product3",
+                    name: "Alloy Steel Products",
+                    image: "./images/bars.jpg",
+                    description:
+                        "Specialized alloy steel products engineered for high-performance applications. Enhanced strength and durability characteristics.",
+                    features: [
+                        "Material: Alloy Steel 4140/4340",
+                        "Various shapes and sizes",
+                        "Heat treated options",
+                        "Superior strength properties",
+                        "Custom alloy compositions",
+                    ],
+                    specs: [
+                        { parameter: "Grade", specification: "4140, 4340, 8620" },
+                        { parameter: "Size Range", specification: "10 mm - 300 mm" },
+                        { parameter: "Length", specification: "1 m - 12 m" },
+                        { parameter: "Heat Treatment", specification: "As per requirement" },
+                        { parameter: "Finish", specification: "Hot Rolled, Cold Drawn" },
+                        { parameter: "Standard", specification: "ASTM A29, A322" },
+                    ],
+                    gallery: ["./images/bars.jpg", "./images/screws.jpg", "./images/pipes.jpg"],
+                    productFeatures: [
+                        "Excellent corrosion resistance",
+                        "High mechanical strength",
+                        "Custom lengths available",
+                        "Suitable for high-pressure systems",
+                    ],
+                },
+                product4: {
+                    id: "product4",
+                    name: "Cold Drawn Precision Tubes",
+                    image: "./images/screw.jpg",
+                    description:
+                        "Precision-engineered cold drawn tubes with superior dimensional accuracy and surface finish for critical applications.",
+                    features: [
+                        "High dimensional accuracy",
+                        "Superior surface finish",
+                        "Various steel grades available",
+                        "Custom sizes and lengths",
+                        "Quality tested products",
+                    ],
+                    specs: [
+                        { parameter: "Grade", specification: "ST37, ST52, 20MnV6" },
+                        { parameter: "Outside Diameter", specification: "8 mm - 120 mm" },
+                        { parameter: "Wall Thickness", specification: "0.8 mm - 8.0 mm" },
+                        { parameter: "Length", specification: "1 m - 8 m" },
+                        { parameter: "Tolerance", specification: "±0.05 mm" },
+                        { parameter: "Standard", specification: "DIN 2391, EN 10305" },
+                    ],
+                    gallery: ["./images/screw.jpg", "./images/pipes1.jpg", "./images/bars.jpg"],
+                    productFeatures: [
+                        "Excellent corrosion resistance",
+                        "High mechanical strength",
+                        "Custom lengths available",
+                        "Suitable for high-pressure systems",
+                    ],
+                },
+                product5: {
+                    id: "product5",
+                    name: "Industrial Steel Pipes",
+                    image: "./images/pipes1.jpg",
+                    description:
+                        "Heavy-duty industrial steel pipes designed for demanding applications. Suitable for oil, gas, and chemical industries.",
+                    features: [
+                        "High pressure rating",
+                        "Corrosion resistant coating",
+                        "Various connection types",
+                        "Quality certified",
+                        "Long service life",
+                    ],
+                    specs: [
+                        { parameter: "Grade", specification: "X42, X52, X60" },
+                        { parameter: "Outside Diameter", specification: "50 mm - 500 mm" },
+                        { parameter: "Wall Thickness", specification: "3.0 mm - 25.0 mm" },
+                        { parameter: "Length", specification: "6 m - 12 m" },
+                        { parameter: "Coating", specification: "3PE, FBE" },
+                        { parameter: "Standard", specification: "API 5L, ISO 3183" },
+                    ],
+                    gallery: [
+                        "./images/pipes1.jpg",
+                        "./images/slider.jpg",
+                        "./images/pipes.jpg",
+                    ],
+                    productFeatures: [
+                        "Excellent corrosion resistance",
+                        "High mechanical strength",
+                        "Custom lengths available",
+                        "Suitable for high-pressure systems",
+                    ],
+                },
+                product6: {
+                    id: "product6",
+                    name: "Custom Steel Solutions",
+                    image: "./images/slider.jpg",
+                    description:
+                        "Tailored steel manufacturing solutions designed to meet specific client requirements and industry standards.",
+                    features: [
+                        "Custom design capabilities",
+                        "Wide range of materials",
+                        "Engineering support",
+                        "Quality assurance",
+                        "Timely delivery",
+                    ],
+                    specs: [
+                        { parameter: "Materials", specification: "As per requirement" },
+                        { parameter: "Dimensions", specification: "Custom sizes" },
+                        { parameter: "Finishing", specification: "Various options" },
+                        { parameter: "Testing", specification: "As per standards" },
+                        { parameter: "Certification", specification: "Mill test certificate" },
+                        { parameter: "Delivery", specification: "As per agreement" },
+                    ],
+                    gallery: [
+                        "./images/slider.jpg",
+                        "./images/steel_rim.jpg",
+                        "./images/screws.jpg",
+                    ],
+                    productFeatures: [
+                        "Excellent corrosion resistance",
+                        "High mechanical strength",
+                        "Custom lengths available",
+                        "Suitable for high-pressure systems",
+                    ],
+                },
+            };
+
+
+        // Get product ID from URL parameters
+        function getProductIdFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            console.log("url-->>", urlParams)
+            return urlParams.get('product') || 'product1';
+        }
+
+        // Show loading state
+        function showLoading() {
+            document.getElementById('loadingSpinner').style.display = 'block';
+            document.getElementById('productDetailSection').style.display = 'none';
+            document.getElementById('errorMessage').style.display = 'none';
+        }
+
+        // Show error state
+        function showError() {
+            document.getElementById('loadingSpinner').style.display = 'none';
+            document.getElementById('productDetailSection').style.display = 'none';
+            document.getElementById('errorMessage').style.display = 'block';
+        }
+
+        // Show product content
+        function showProduct() {
+            document.getElementById('loadingSpinner').style.display = 'none';
+            document.getElementById('productDetailSection').style.display = 'block';
+            document.getElementById('errorMessage').style.display = 'none';
+        }
+
+        // Load and display product data
+        function loadProductData(productId) {
+            showLoading();
+
+            // Simulate loading delay (remove in production)
+            setTimeout(() => {
+                const product = productsDatabase[productId];
+                
+                if (!product) {
+                    showError();
+                    return;
+                }
+
+                // Update page title
+                document.title = `${product.name} | JAINAM FERRO ALLOYS`;
+
+                // Update product image and alt text
+                const productImage = document.getElementById("product-image");
+                productImage.src = product.image;
+                productImage.alt = product.name;
+
+                // Update product title and description
+                document.getElementById("product-title").textContent = product.name;
+                document.getElementById("product-desc").textContent = product.description;
+
+                // Update features list
+                const featuresList = document.getElementById("product-features");
+                featuresList.innerHTML = "";
+                product.features.forEach(feature => {
+                    const li = document.createElement("li");
+                    li.className = "mb-2";
+                    li.innerHTML = `<i class="fas fa-check-circle text-primary me-2"></i> ${feature}`;
+                    featuresList.appendChild(li);
+                });
+
+                // Update specifications table
+                const specTableBody = document.getElementById("product-spec-table");
+                specTableBody.innerHTML = "";
+                product.specs.forEach(spec => {
+                    const tr = document.createElement("tr");
+                    tr.innerHTML = `<td><strong>${spec.parameter}</strong></td><td>${spec.specification}</td>`;
+                    specTableBody.appendChild(tr);
+                });
+
+                const prodFeatList = document.getElementById("productFeaturesList");
+                prodFeatList.innerHTML = "";
+                product.productFeatures.forEach(prodList => {
+                    const li = document.createElement("li");
+                    li.className = "list-group-item";
+                    li.innerHTML = `<i class="fas fa-check text-secondary me-2"></i> ${prodList}`;
+                    prodFeatList.appendChild(li);
+                });
+
+                // Update gallery images
+                const galleryContainer = document.getElementById("gallery-images");
+                galleryContainer.innerHTML = "";
+                product.gallery.forEach(imgSrc => {
+                    const div = document.createElement("div");
+                    div.className = "col-md-4";
+                    div.innerHTML = `<img src="${imgSrc}" class="img-fluid rounded" alt="${product.name}">`;
+                    galleryContainer.appendChild(div);
+                });
+
+                showProduct();
+            }, 500); // Simulate loading delay
+        }
+
+        // Initialize page
+        function initializePage() {
+            const productId = getProductIdFromURL();
+            loadProductData(productId);
+
+            // Gallery modal trigger
+            document.getElementById('viewGallery').addEventListener('click', function() {
+                const galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+                galleryModal.show();
+            });
+
+            // Handle browser back/forward buttons
+            window.addEventListener('popstate', function() {
+                const newProductId = getProductIdFromURL();
+                loadProductData(newProductId);
+            });
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener("DOMContentLoaded", initializePage);
+
+        // Handle image loading errors
+        document.getElementById('product-image').addEventListener('error', function() {
+            this.src = './images/placeholder.jpg'; // Fallback image
+            this.alt = 'Product image not available';
+        });
+    </script>
+</body>
+</html>
