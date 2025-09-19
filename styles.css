@@ -1070,7 +1070,7 @@ body {
 
 @media (max-width: 480px) {
   .indSlide {
-    min-height: 80vh;
+    /* min-height: 80vh; */
   }
   .carousel {
     height: 220px;
