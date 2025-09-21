@@ -271,18 +271,19 @@ function initGallery() {
   });
 }
 
-// function intiCertificate() {
-//   const galleryItems = document.querySelectorAll(".gallery-item");
-
-//   galleryItems.forEach((item) => {
-//     item.addEventListener("click", function () {
-//       const img = this.querySelector("img");
-//       if (img) {
-//         createLightbox(img.src, img.alt);
-//       }
-//     });
-//   });
-// }
+function intiCertificate() {
+  const certificateImage = document.querySelectorAll(".certificateViewBtn");
+  console.log("-->", certificateImage)
+  certificateImage.forEach((item) => {
+    item.addEventListener("click", function () {
+      const img = this.querySelector("img");
+      console.log("img->",img)
+      if (img) {
+        createLightbox(img.src, img.alt);
+      }
+    });
+  });
+}
 
 
 // Create lightbox modal
@@ -359,6 +360,7 @@ function createLightbox(imageSrc, imageAlt) {
 
 // Initialize gallery when DOM is loaded
 document.addEventListener("DOMContentLoaded", initGallery);
+document.addEventListener("DOMContentLoaded", intiCertificate);
 
 // ===== COUNTER ANIMATION =====
 function initCounters() {
@@ -521,7 +523,8 @@ function initCustomCursor() {
 
     // Enlarge cursor on hover over clickable elements
     const clickableElements = document.querySelectorAll(
-      "a, button, .service-card, .gallery-item"
+      "a, button, .service-card, .gallery-item",
+      ".certificateImage"
     );
 
     clickableElements.forEach((el) => {

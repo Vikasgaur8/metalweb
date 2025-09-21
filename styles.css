@@ -673,6 +673,12 @@ body {
     .nav-link {
         background-color: rgb(222 222 222);   
     }
+    .certificate-section{
+        display: none;
+    }
+    .certificate-moblie{
+        display: block;
+    }
 }
 
 @media (max-width: 576px) {
@@ -870,6 +876,12 @@ body {
   }
   .hero-indicators { gap: 10px; }
   .indicator { width: 10px; height: 10px; }
+}
+
+@media (min-width: 768px) {
+  .certificate-moblie{
+    display: none;
+ }
 }
 
 /* Hero Section Gradient Overlay */
@@ -1090,4 +1102,89 @@ body {
   }
 }
 
+
+.certificate-section {
+    background: #f8f9fa;
+}
+
+.certificate-img {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.certificate-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* .btn-primary-custom {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+} */
+
+.certificate-content {
+    padding: 2rem;
+}
+
+.certificate-content h2 {
+    color: #1a202c;
+    margin-bottom: 1rem;
+}
+
+.certificate-content p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.check-item i {
+    color: #48bb78;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 991px) {
+    .certificate-img {
+        height: 400px;
+        margin-bottom: 2rem;
+    }
+
+    .certificate-content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .certificate-img {
+        height: 350px;
+        padding: 15px;
+    }
+}
 
