@@ -1,392 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail | JAINAM FERRO ALLOYS</title>
-    <!-- Bootstrap & Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail | JAINAM FERRO ALLOYS</title>
+  <!-- Bootstrap & Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <!-- Animated Header & Social Header (copy from index.html) -->
-    <div class="animated-header"><div class="animated-line"></div></div>
-    <div class="social-header">
-      <div class="container">
-        <div class="d-flex justify-content-end">
-          <div class="social-links">
-            <span>Follow us on</span>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
+  <!-- Animated Header & Social Header (copy from index.html) -->
+  <div class="animated-header">
+    <div class="animated-line"></div>
+  </div>
+  <div class="social-header">
+    <div class="container">
+      <div class="d-flex justify-content-end">
+        <div class="social-links">
+          <span>Follow us on</span>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar (copy structure from index.html) -->
+  <nav class="navbar navbar-expand-lg main-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/OnlyLogo.jpeg" alt="JSA" class="brand-logo logo-img">
+        <div class="brand-text">
+          <h2>JAINAM FERRO ALLOYS</h2>
+          <p>An ISO 9001:2015 Certified Company</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#about">Company</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#services">Quality</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../index.html#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="./certificate.html">Certificate</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Detail Section -->
+  <section class="certificate-section py-5">
+    <div class="container">
+      <!-- Row 1 -->
+      <div class="row g-4 align-items-center mb-5">
+        <!-- Image -->
+        <div class="col-lg-5 col-md-6">
+          <div class="certificate-img">
+            <img src="./certificates/JAINAM FERRO ALLOYS - CE.jpg" alt="CE Certificate" />
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="col-lg-7 col-md-6">
+          <div class="certificate-content">
+            <h2 class="fw-bold mb-3">S.S Flanges, Buttweld Fittings & Fasteners</h2>
+            <p class="lead mb-4">
+              Complies with <strong>General Product Safety Directive 2001/95/EC</strong>.
+              Manufacturer's declaration of conformity is accepted, and <strong>JAINAM FERRO ALLOYS</strong> can place
+              the
+              CE
+              marking as per regulations.
+            </p>
+            <div class="mb-4">
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Certified for European market</span>
+              </div>
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Verified safety compliance</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
+              <img src="./certificates/JAINAM FERRO ALLOYS - CE.jpg" alt="CE Certificate" style="display: none;" />
+              <i class="fas fa-eye me-2"></i>View Certificate
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 (Swapped) -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-7 col-md-6 order-md-1">
+          <div class="certificate-content">
+            <h2 class="fw-bold mb-3">ISO 9001:2015 Quality Certification</h2>
+            <p class="lead mb-4">
+              Certified for maintaining strict quality standards in manufacturing, inspection, and testing processes.
+              <strong>ISO 9001:2015</strong> ensures consistency and customer satisfaction.
+            </p>
+            <div class="mb-4">
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Quality management system certified</span>
+              </div>
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Continuous improvement processes</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
+              <img src="./certificates/JAINAM FERRO ALLOYS EMS.jpg" alt="ISO Certificate" style="display: none;" />
+              <i class="fas fa-eye me-2"></i>View Certificate
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 order-md-2">
+          <div class="certificate-img">
+            <img src="./certificates/JAINAM FERRO ALLOYS EMS.jpg" alt="ISO Certificate" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-5 col-md-6">
+          <div class="certificate-img">
+            <img src="./certificates/JAINAM FERRO ALLOYS OHSMS.jpg" alt="RoHS Certificate" />
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <div class="certificate-content">
+            <h2 class="fw-bold mb-3">RoHS Compliance</h2>
+            <p class="lead mb-4">
+              Fully compliant with the <strong>Restriction of Hazardous Substances (RoHS)</strong> directive.
+              Ensures that products are safe and environmentally friendly.
+            </p>
+            <div class="mb-4">
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Environmentally safe materials</span>
+              </div>
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Hazardous substance free</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
+              <img src="./certificates/JAINAM FERRO ALLOYS OHSMS.jpg" alt="RoHS Certificate" style="display: none;" />
+              <i class="fas fa-eye me-2"></i>View Certificate
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4 (Swapped) -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-7 col-md-6 order-md-1">
+          <div class="certificate-content">
+            <h2 class="fw-bold mb-3">Inspection & Test Report</h2>
+            <p class="lead mb-4">
+              Products undergo rigorous testing and inspection.
+              <strong>JAINAM FERRO ALLOYS</strong> ensures full compliance with technical documentation and inspection
+              reports.
+            </p>
+            <div class="mb-4">
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Comprehensive testing protocols</span>
+              </div>
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Detailed inspection reports</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
+              <img src="./certificates/JAINAM FERRO ALLOYS QMS.jpg" alt="Test Report" style="display: none;" />
+              <i class="fas fa-eye me-2"></i>View Certificate
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 order-md-2">
+          <div class="certificate-img">
+            <img src="./certificates/JAINAM FERRO ALLOYS QMS.jpg" alt="Test Report" />
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Navbar (copy structure from index.html) -->
-    <nav class="navbar navbar-expand-lg main-nav sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../images/OnlyLogo.jpeg" alt="JSA" class="brand-logo logo-img">
-          <div class="brand-text">
-            <h2>JAINAM FERRO ALLOYS</h2>
-            <p>An ISO 9001:2015 Certified Company</p>
+  <!-- Certificate for Moblie -->
+  <section class="certificate-section py-5 certificate-moblie">
+    <div class="container">
+      <!-- Row 1 -->
+      <div class="row g-4 align-items-center mb-5">
+        <!-- Image -->
+        <div class="col-lg-5 col-md-6">
+          <div class="certificate-img">
+            <img src="./certificates/JAINAM FERRO ALLOYS - CE.jpg" alt="CE Certificate" />
           </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="../index.html#about">Company</a></li>
-            <li class="nav-item"><a class="nav-link" href="../index.html#services">Quality</a></li>
-            <li class="nav-item"><a class="nav-link active" href="../index.html#products">Products</a></li>
-            <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact Us</a></li>
+        </div>
+        <!-- Content -->
+        <div class="col-lg-7 col-md-6">
+          <div class="certificate-content">
+            <h2 class="fw-bold mb-3">S.S Flanges, Buttweld Fittings & Fasteners</h2>
+            <p class="lead mb-4">
+              Complies with <strong>General Product Safety Directive 2001/95/EC</strong>.
+              Manufacturer's declaration of conformity is accepted, and <strong>JAINAM FERRO ALLOYS</strong> can place
+              the
+              CE
+              marking as per regulations.
+            </p>
+            <div class="mb-4">
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Certified for European market</span>
+              </div>
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Verified safety compliance</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
+              <img src="./certificates/JAINAM FERRO ALLOYS - CE.jpg" alt="CE Certificate" style="display: none;" />
+              <i class="fas fa-eye me-2"></i>View Certificate
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 (Swapped) -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-5 col-md-6 order-md-2">
+          <div class="certificate-img">
+            <img src="./certificates/JAINAM FERRO ALLOYS EMS.jpg" alt="ISO Certificate" />
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 order-md-1">
+          <div class="certificate-content">
+            <h2 class="fw-bold mb-3">ISO 9001:2015 Quality Certification</h2>
+            <p class="lead mb-4">
+              Certified for maintaining strict quality standards in manufacturing, inspection, and testing processes.
+              <strong>ISO 9001:2015</strong> ensures consistency and customer satisfaction.
+            </p>
+            <div class="mb-4">
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Quality management system certified</span>
+              </div>
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Continuous improvement processes</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
+              <img src="./certificates/JAINAM FERRO ALLOYS EMS.jpg" alt="ISO Certificate" style="display: none;" />
+              <i class="fas fa-eye me-2"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-5 col-md-6">
+          <div class="certificate-img">
+            <img src="./certificates/JAINAM FERRO ALLOYS OHSMS.jpg" alt="RoHS Certificate" />
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <div class="certificate-content">
+            <h2 class="fw-bold mb-3">RoHS Compliance</h2>
+            <p class="lead mb-4">
+              Fully compliant with the <strong>Restriction of Hazardous Substances (RoHS)</strong> directive.
+              Ensures that products are safe and environmentally friendly.
+            </p>
+            <div class="mb-4">
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Environmentally safe materials</span>
+              </div>
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Hazardous substance free</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
+              <img src="./certificates/JAINAM FERRO ALLOYS OHSMS.jpg" alt="RoHS Certificate" style="display: none;" />
+              <i class="fas fa-eye me-2"></i>View Certificate
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4 (Swapped) -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-5 col-md-6 order-md-2">
+          <div class="certificate-img">
+            <img src="./certificates/JAINAM FERRO ALLOYS QMS.jpg" alt="Test Report" />
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 order-md-1">
+          <div class="certificate-content">
+            <h2 class="fw-bold mb-3">Inspection & Test Report</h2>
+            <p class="lead mb-4">
+              Products undergo rigorous testing and inspection.
+              <strong>JAINAM FERRO ALLOYS</strong> ensures full compliance with technical documentation and inspection
+              reports.
+            </p>
+            <div class="mb-4">
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Comprehensive testing protocols</span>
+              </div>
+              <div class="check-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Detailed inspection reports</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
+              <img src="./certificates/JAINAM FERRO ALLOYS QMS.jpg" alt="Test Report" style="display: none;" />
+              <i class="fas fa-eye me-2"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (copy structure from index.html, update links if needed) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="navbar-brand mb-3">
+            <img src="../images/OnlyLogo.jpeg" alt="JAINAM FERRO ALLOYS Logo" class="brand-logo logo-img">
+            <div class="brand-text">
+              <h2 style="color: var(--secondary-color); font-size: var(--font-size-xl)">JAINAM FERRO ALLOYS</h2>
+              <p style="color: rgba(255,255,255,0.8);">An ISO 9001:2015 Certified Company</p>
+            </div>
+          </div>
+          <p style="color: rgba(255,255,255,0.8);">Leading manufacturer of stainless steel, carbon steel, and alloy
+            steel products. Trusted for precision engineering solutions.</p>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html#index">Home</a></li>
+            <li><a href="../index.html#about">About Us</a></li>
+            <li><a href="../index.html#services">Quality</a></li>
+            <li><a href="../index.html#products">Products</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-
-    <!-- Product Detail Section -->
-    <section class="certificate-section py-5">
-      <div class="container">
-        <!-- Row 1 -->
-        <div class="row g-4 align-items-center mb-5">
-          <!-- Image -->
-          <div class="col-lg-5 col-md-6">
-            <div class="certificate-img">
-              <img src="./certificates/JAINAM FERRO ALLOYS - CE.jpg" alt="CE Certificate" />
-            </div>
-          </div>
-          <!-- Content -->
-          <div class="col-lg-7 col-md-6">
-            <div class="certificate-content">
-              <h2 class="fw-bold mb-3">S.S Flanges, Buttweld Fittings & Fasteners</h2>
-              <p class="lead mb-4">
-                Complies with <strong>General Product Safety Directive 2001/95/EC</strong>.
-                Manufacturer's declaration of conformity is accepted, and <strong>JAINAM FERRO ALLOYS</strong> can place the
-                CE
-                marking as per regulations.
-              </p>
-              <div class="mb-4">
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Certified for European market</span>
-                </div>
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Verified safety compliance</span>
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
-                <img src="./certificates/JAINAM FERRO ALLOYS - CE.jpg" alt="CE Certificate" style="display: none;" />
-                <i class="fas fa-eye me-2"></i>View Certificate
-              </a>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Products</h5>
+          <ul class="footer-links">
+            <li><a href="#">Stainless Steel Tubes</a></li>
+            <li><a href="#">Carbon Steel Pipes</a></li>
+            <li><a href="#">Alloy Steel Products</a></li>
+            <li><a href="#">Cold Drawn Pipes</a></li>
+            <li><a href="#">Custom Solutions</a></li>
+          </ul>
         </div>
-    
-        <!-- Row 2 (Swapped) -->
-        <div class="row g-4 align-items-center mb-5">
-          <div class="col-lg-7 col-md-6 order-md-1">
-            <div class="certificate-content">
-              <h2 class="fw-bold mb-3">ISO 9001:2015 Quality Certification</h2>
-              <p class="lead mb-4">
-                Certified for maintaining strict quality standards in manufacturing, inspection, and testing processes.
-                <strong>ISO 9001:2015</strong> ensures consistency and customer satisfaction.
-              </p>
-              <div class="mb-4">
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Quality management system certified</span>
-                </div>
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Continuous improvement processes</span>
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
-                <img src="./certificates/JAINAM FERRO ALLOYS EMS.jpg" alt="ISO Certificate" style="display: none;" />
-                <i class="fas fa-eye me-2"></i>View Certificate
-              </a>
-            </div>
+        <div class="col-lg-3 col-md-12">
+          <h5>Contact Info</h5>
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span>123 Industrial Area, Steel City</span>
           </div>
-          <div class="col-lg-5 col-md-6 order-md-2">
-            <div class="certificate-img">
-              <img src="./certificates/JAINAM FERRO ALLOYS EMS.jpg" alt="ISO Certificate" />
-            </div>
-          </div>
-        </div>
-    
-        <!-- Row 3 -->
-        <div class="row g-4 align-items-center mb-5">
-          <div class="col-lg-5 col-md-6">
-            <div class="certificate-img">
-              <img src="./certificates/JAINAM FERRO ALLOYS OHSMS.jpg" alt="RoHS Certificate" />
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-6">
-            <div class="certificate-content">
-              <h2 class="fw-bold mb-3">RoHS Compliance</h2>
-              <p class="lead mb-4">
-                Fully compliant with the <strong>Restriction of Hazardous Substances (RoHS)</strong> directive.
-                Ensures that products are safe and environmentally friendly.
-              </p>
-              <div class="mb-4">
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Environmentally safe materials</span>
-                </div>
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Hazardous substance free</span>
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
-                <img src="./certificates/JAINAM FERRO ALLOYS OHSMS.jpg" alt="RoHS Certificate"  style="display: none;"  />
-                <i class="fas fa-eye me-2"></i>View Certificate
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Row 4 (Swapped) -->
-        <div class="row g-4 align-items-center mb-5">
-          <div class="col-lg-7 col-md-6 order-md-1">
-            <div class="certificate-content">
-              <h2 class="fw-bold mb-3">Inspection & Test Report</h2>
-              <p class="lead mb-4">
-                Products undergo rigorous testing and inspection.
-                <strong>JAINAM FERRO ALLOYS</strong> ensures full compliance with technical documentation and inspection
-                reports.
-              </p>
-              <div class="mb-4">
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Comprehensive testing protocols</span>
-                </div>
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Detailed inspection reports</span>
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
-                <img src="./certificates/JAINAM FERRO ALLOYS QMS.jpg" alt="Test Report"  style="display: none;"  />
-                <i class="fas fa-eye me-2"></i>View Certificate
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-6 order-md-2">
-            <div class="certificate-img">
-              <img src="./certificates/JAINAM FERRO ALLOYS QMS.jpg" alt="Test Report" />
-            </div>
-          </div>
+          <div class="contact-item"><i class="fas fa-phone"></i> <span>+91 1234567890</span></div>
+          <div class="contact-item"><i class="fas fa-envelope"></i> <span>info@sailcometal.com</span></div>
         </div>
       </div>
-    </section>
-
-    <!-- Certificate for Moblie -->
-    <section class="certificate-section py-5 certificate-moblie">
-      <div class="container">
-        <!-- Row 1 -->
-        <div class="row g-4 align-items-center mb-5">
-          <!-- Image -->
-          <div class="col-lg-5 col-md-6">
-            <div class="certificate-img">
-              <img src="./certificates/JAINAM FERRO ALLOYS - CE.jpg" alt="CE Certificate" />
-            </div>
-          </div>
-          <!-- Content -->
-          <div class="col-lg-7 col-md-6">
-            <div class="certificate-content">
-              <h2 class="fw-bold mb-3">S.S Flanges, Buttweld Fittings & Fasteners</h2>
-              <p class="lead mb-4">
-                Complies with <strong>General Product Safety Directive 2001/95/EC</strong>.
-                Manufacturer's declaration of conformity is accepted, and <strong>JAINAM FERRO ALLOYS</strong> can place the
-                CE
-                marking as per regulations.
-              </p>
-              <div class="mb-4">
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Certified for European market</span>
-                </div>
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Verified safety compliance</span>
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
-                <img src="./certificates/JAINAM FERRO ALLOYS - CE.jpg" alt="CE Certificate"  style="display: none;"  />
-                <i class="fas fa-eye me-2"></i>View Certificate
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Row 2 (Swapped) -->
-        <div class="row g-4 align-items-center mb-5">
-            <div class="col-lg-5 col-md-6 order-md-2">
-              <div class="certificate-img">
-                <img src="./certificates/JAINAM FERRO ALLOYS EMS.jpg" alt="ISO Certificate" />
-              </div>
-            </div>
-          <div class="col-lg-7 col-md-6 order-md-1">
-            <div class="certificate-content">
-              <h2 class="fw-bold mb-3">ISO 9001:2015 Quality Certification</h2>
-              <p class="lead mb-4">
-                Certified for maintaining strict quality standards in manufacturing, inspection, and testing processes.
-                <strong>ISO 9001:2015</strong> ensures consistency and customer satisfaction.
-              </p>
-              <div class="mb-4">
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Quality management system certified</span>
-                </div>
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Continuous improvement processes</span>
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
-                <img src="./certificates/JAINAM FERRO ALLOYS EMS.jpg" alt="ISO Certificate"  style="display: none;"  />
-                <i class="fas fa-eye me-2"></i>View Certificate
-              </a>
-            </div>
-          </div>
-       
-        </div>
-    
-        <!-- Row 3 -->
-        <div class="row g-4 align-items-center mb-5">
-          <div class="col-lg-5 col-md-6">
-            <div class="certificate-img">
-              <img src="./certificates/JAINAM FERRO ALLOYS OHSMS.jpg" alt="RoHS Certificate" />
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-6">
-            <div class="certificate-content">
-              <h2 class="fw-bold mb-3">RoHS Compliance</h2>
-              <p class="lead mb-4">
-                Fully compliant with the <strong>Restriction of Hazardous Substances (RoHS)</strong> directive.
-                Ensures that products are safe and environmentally friendly.
-              </p>
-              <div class="mb-4">
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Environmentally safe materials</span>
-                </div>
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Hazardous substance free</span>
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
-                <img src="./certificates/JAINAM FERRO ALLOYS OHSMS.jpg" alt="RoHS Certificate"  style="display: none;"  />
-                <i class="fas fa-eye me-2"></i>View Certificate
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Row 4 (Swapped) -->
-        <div class="row g-4 align-items-center mb-5">
-          <div class="col-lg-5 col-md-6 order-md-2">
-            <div class="certificate-img">
-              <img src="./certificates/JAINAM FERRO ALLOYS QMS.jpg" alt="Test Report" />
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-6 order-md-1">
-            <div class="certificate-content">
-              <h2 class="fw-bold mb-3">Inspection & Test Report</h2>
-              <p class="lead mb-4">
-                Products undergo rigorous testing and inspection.
-                <strong>JAINAM FERRO ALLOYS</strong> ensures full compliance with technical documentation and inspection
-                reports.
-              </p>
-              <div class="mb-4">
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Comprehensive testing protocols</span>
-                </div>
-                <div class="check-item">
-                  <i class="fas fa-check-circle"></i>
-                  <span>Detailed inspection reports</span>
-                </div>
-              </div>
-              <a href="#" class="btn btn-primary-custom px-4 py-2 certificateViewBtn">
-                <img src="./certificates/JAINAM FERRO ALLOYS QMS.jpg" alt="Test Report"  style="display: none;"  />
-                <i class="fas fa-eye me-2"></i>View Certificate
-              </a>
-            </div>
-          </div>
-          
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 JAINAM FERRO ALLOYS. All rights reserved. Designed for excellence in steel manufacturing.</p>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <!-- Footer (copy structure from index.html, update links if needed) -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="navbar-brand mb-3">
-              <img src="../images/OnlyLogo.jpeg" alt="JAINAM FERRO ALLOYS Logo" class="brand-logo logo-img">
-              <div class="brand-text">
-                <h2 style="color: var(--secondary-color); font-size: var(--font-size-xl)">JAINAM FERRO ALLOYS</h2>
-                <p style="color: rgba(255,255,255,0.8);">An ISO 9001:2015 Certified Company</p>
-              </div>
-            </div>
-            <p style="color: rgba(255,255,255,0.8);">Leading manufacturer of stainless steel, carbon steel, and alloy steel products. Trusted for precision engineering solutions.</p>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-4">
-            <h5>Quick Links</h5>
-            <ul class="footer-links">
-              <li><a href="../index.html#index">Home</a></li>
-              <li><a href="../index.html#about">About Us</a></li>
-              <li><a href="../index.html#services">Quality</a></li>
-              <li><a href="../index.html#products">Products</a></li>
-              <li><a href="../index.html#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5>Products</h5>
-            <ul class="footer-links">
-              <li><a href="#">Stainless Steel Tubes</a></li>
-              <li><a href="#">Carbon Steel Pipes</a></li>
-              <li><a href="#">Alloy Steel Products</a></li>
-              <li><a href="#">Cold Drawn Pipes</a></li>
-              <li><a href="#">Custom Solutions</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-12">
-            <h5>Contact Info</h5>
-            <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span>123 Industrial Area, Steel City</span></div>
-            <div class="contact-item"><i class="fas fa-phone"></i> <span>+91 1234567890</span></div>
-            <div class="contact-item"><i class="fas fa-envelope"></i> <span>info@sailcometal.com</span></div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 JAINAM FERRO ALLOYS. All rights reserved. Designed for excellence in steel manufacturing.</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="./script.js"></script>
-    <script>
-      // Modal gallery trigger
-      document.getElementById('viewGallery').addEventListener('click', function() {
-        var galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
-        galleryModal.show();
-      });
-    </script>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script>
+    // Modal gallery trigger
+    document.getElementById('viewGallery').addEventListener('click', function () {
+      var galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+      galleryModal.show();
+    });
+  </script>
 </body>
+
 </html>

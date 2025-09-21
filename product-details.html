@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <!-- Animated Header & Social Header -->
-    <div class="animated-header"><div class="animated-line"></div></div>
+    <div class="animated-header">
+        <div class="animated-line"></div>
+    </div>
     <div class="social-header">
         <div class="container">
             <div class="d-flex justify-content-end">
@@ -47,6 +51,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.html#about">Company</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#services">Quality</a></li>
                     <li class="nav-item"><a class="nav-link active" href="index.html#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./certificate.html">Certificate</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact Us</a></li>
                 </ul>
             </div>
@@ -72,16 +77,17 @@
     <section class="section product-detail-section py-5" id="productDetailSection">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <!-- Product Image + Gallery Modal -->
                     <div class="product-image shadow-lg rounded-4 overflow-hidden position-relative">
                         <img id="product-image" src="" alt="" class="img-fluid w-100">
-                        <button class="btn btn-outline-custom position-absolute" style="bottom:20px; right:20px;" id="viewGallery">
+                        <button class="btn btn-outline-custom position-absolute" style="bottom:20px; right:20px;"
+                            id="viewGallery">
                             <i class="fas fa-search-plus"></i> View Gallery
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div class="product-info">
                         <h1 id="product-title" class="section-title text-start mb-3"></h1>
                         <p id="product-desc" class="lead text-secondary mb-4"></p>
@@ -89,7 +95,8 @@
                             <!-- Features dynamically inserted here -->
                         </ul>
                         <div class="d-flex gap-3">
-                            <a href="index.html#contact" class="btn btn-primary-custom Enquirebtn"><i class="fas fa-paper-plane"></i> Enquire Now</a>
+                            <a href="index.html#contact" class="btn btn-primary-custom Enquirebtn"><i
+                                    class="fas fa-paper-plane"></i> Enquire Now</a>
                             <a href="index.html#products" class="btn btn-outline-custom">Back to Products</a>
                         </div>
                     </div>
@@ -120,13 +127,14 @@
                 <div class="col-lg-12">
                     <h3 class="mb-3">Product Features</h3>
                     <ul class="list-group list-group-flush" id="productFeaturesList">
-                    <!-- Product feature dynamically inserted here -->
+                        <!-- Product feature dynamically inserted here -->
                     </ul>
                 </div>
             </div>
 
             <!-- Gallery Modal (Bootstrap) -->
-            <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+            <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content rounded-4">
                         <div class="modal-header">
@@ -152,11 +160,13 @@
                     <div class="navbar-brand mb-3">
                         <img src="./images/OnlyLogo.jpeg" alt="JAINAM FERRO ALLOYS Logo" class="brand-logo logo-img">
                         <div class="brand-text">
-                            <h2 style="color: var(--secondary-color); font-size: var(--font-size-xl)">JAINAM FERRO ALLOYS</h2>
+                            <h2 style="color: var(--secondary-color); font-size: var(--font-size-xl)">JAINAM FERRO
+                                ALLOYS</h2>
                             <p style="color: rgba(255,255,255,0.8);">An ISO 9001:2015 Certified Company</p>
                         </div>
                     </div>
-                    <p style="color: rgba(255,255,255,0.8);">Leading manufacturer of stainless steel, carbon steel, and alloy steel products. Trusted for precision engineering solutions.</p>
+                    <p style="color: rgba(255,255,255,0.8);">Leading manufacturer of stainless steel, carbon steel, and
+                        alloy steel products. Trusted for precision engineering solutions.</p>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5>Quick Links</h5>
@@ -180,110 +190,177 @@
                 </div>
                 <div class="col-lg-3 col-md-12">
                     <h5>Contact Info</h5>
-                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span>123 Industrial Area, Steel City</span></div>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span>123 Industrial Area, Steel
+                            City</span></div>
                     <div class="contact-item"><i class="fas fa-phone"></i> <span>+91 1234567890</span></div>
                     <div class="contact-item"><i class="fas fa-envelope"></i> <span>info@sailcometal.com</span></div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 JAINAM FERRO ALLOYS. All rights reserved. Designed for excellence in steel manufacturing.</p>
+                <p>&copy; 2025 JAINAM FERRO ALLOYS. All rights reserved. Designed for excellence in steel manufacturing.
+                </p>
             </div>
         </div>
     </footer>
+    <a href="./images/flangs/LONG_WELD/long-weld-neck-flanges.jpg">
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // Products Database - Expanded with more products
-        const productsDatabase = {
+        <script>
+            // Products Database - Expanded with more products
+            const productsDatabase = {
+                // product1: {
+                //     id: "product1",
+                //     name: "Stainless Steel Tube",
+                //     image: "./images/screws.jpg",
+                //     description:
+                //         "High-grade stainless steel tubes manufactured for industrial applications. Corrosion-resistant, highly durable, customizable sizing.",
+                //     features: [
+                //         "Material: Stainless Steel 304/316",
+                //         'Diameter: 1/2" to 6"',
+                //         "Length: Up to 12 meters",
+                //         "Surface Finish: Polished/Matte",
+                //         "Certifications: ISO 9001:2015",
+                //     ],
+                //     specs: [
+                //         { parameter: "Grade", specification: "304, 316, 321" },
+                //         { parameter: "Outside Diameter", specification: "12 mm - 152 mm" },
+                //         { parameter: "Wall Thickness", specification: "0.50 mm - 4.00 mm" },
+                //         { parameter: "Length", specification: "2 m - 12 m" },
+                //         { parameter: "Finish", specification: "Polished, Matte" },
+                //         { parameter: "Standard", specification: "ASTM A312, A213" },
+                //     ],
+                //     gallery: ["./images/screws.jpg", "./images/pipes.jpg", "./images/bars.jpg"],
+                //     productFeatures: [
+                //         "Excellent corrosion resistance",
+                //         "High mechanical strength",
+                //         "Custom lengths available",
+                //         "Suitable for high-pressure systems",
+                //     ],
+                // },
                 product1: {
                     id: "product1",
-                    name: "Stainless Steel Tube",
-                    image: "./images/screws.jpg",
+                    name: "Slip On Flanges (SORF Flanges)",
+                    image: "./images/flangs/SS_SLIP_ON_FLANGES.jpeg",
                     description:
-                        "High-grade stainless steel tubes manufactured for industrial applications. Corrosion-resistant, highly durable, customizable sizing.",
+                        "Slip On Flanges (SORF) are easy-to-install forged steel flanges widely used in piping systems. Manufactured by Amcometals in stainless steel, carbon steel, alloy steel, duplex, super duplex, and nickel alloys, these flanges ensure leak-proof connections and durability in industrial applications.",
                     features: [
-                        "Material: Stainless Steel 304/316",
-                        'Diameter: 1/2" to 6"',
-                        "Length: Up to 12 meters",
-                        "Surface Finish: Polished/Matte",
+                        "Pressure Classes: 150 LBS to 2500 LBS",
+                        "Sizes: 1/8\" NB to 48\" NB",
+                        "Flange Face: RF (Raised Face), FF (Flat Face), RTJ (Ring Type Joint)",
+                        "Standards: ANSI B16.5, B16.47, MSS SP44, DIN, BS, EN",
                         "Certifications: ISO 9001:2015",
                     ],
                     specs: [
-                        { parameter: "Grade", specification: "304, 316, 321" },
-                        { parameter: "Outside Diameter", specification: "12 mm - 152 mm" },
-                        { parameter: "Wall Thickness", specification: "0.50 mm - 4.00 mm" },
-                        { parameter: "Length", specification: "2 m - 12 m" },
-                        { parameter: "Finish", specification: "Polished, Matte" },
-                        { parameter: "Standard", specification: "ASTM A312, A213" },
+                        { parameter: "Material Grades", specification: "Stainless Steel, Carbon Steel, Alloy Steel, Duplex, Super Duplex, Nickel Alloys, Copper Alloys" },
+                        { parameter: "Size Range", specification: "1/8\" NB to 48\" NB" },
+                        { parameter: "Pressure Class", specification: "150, 300, 600, 900, 1500, 2500 LBS" },
+                        { parameter: "Face Type", specification: "RF, FF, RTJ" },
+                        { parameter: "Standards", specification: "ANSI B16.5, B16.47, MSS SP44, DIN, BS, EN" },
+                        { parameter: "Testing", specification: "Pitting Resistance, Chemical Analysis, Hardness, Micro/Macro, Flaring, Flattening" },
                     ],
-                    gallery: ["./images/screws.jpg", "./images/pipes.jpg", "./images/bars.jpg"],
+                    gallery: ["./images/flangs/CS_Slip_On_Flanges.jpg", "./images/flangs/SS_SLIP_ON_FLANGES.jpeg", "./images/flangs/Alloy-Steel-Slip-On-Flanges.webp"],
                     productFeatures: [
-                        "Excellent corrosion resistance",
-                        "High mechanical strength",
-                        "Custom lengths available",
-                        "Suitable for high-pressure systems",
+                        "Leakage prevention in pipelines",
+                        "High mechanical strength and durability",
+                        "Corrosion resistant for harsh environments",
+                        "Easy alignment and welding installation",
+                        "Available in customized thickness, sizes, and grades",
                     ],
+                    applications: [
+                        "Oil & Gas Processing",
+                        "Petrochemicals",
+                        "Power Generation",
+                        "Heat Exchangers & Condensers",
+                        "Pharmaceutical Equipment",
+                        "Offshore Drilling & Marine Applications",
+                        "Pulp & Paper Industry",
+                    ],
+                    exportCountries: [
+                        "USA", "UK", "UAE", "Saudi Arabia", "Singapore", "Brazil", "Germany", "South Africa", "Australia", "India"
+                    ]
                 },
                 product2: {
                     id: "product2",
-                    name: "Carbon Steel Pipe",
-                    image: "./images/pipes.jpg",
+                    name: "Weld Neck Flanges (WNRF Flanges)",
+                    image: "./images/flangs/SS WELD NECK FLANGES.png",
                     description:
-                        "Premium quality carbon steel pipes for structural applications. Durable and cost-effective solution for various industrial needs.",
+                        "Weld Neck Flanges (WNRF) are forged flanges designed for high-pressure and high-temperature applications. Manufactured by Amcometals as per ASME B16.5, B16.47, MSS SP44, DIN, BS, and EN standards, these flanges ensure leak-proof welded joints and provide reinforcement to piping systems.",
                     features: [
-                        "Material: Carbon Steel A106/A53",
-                        'Diameter: 1" to 8"',
-                        "Length: Up to 10 meters",
-                        "Surface Finish: Galvanized",
-                        "Certifications: ISO 14001",
+                        "Pressure Classes: 150 LBS to 2500 LBS",
+                        "Sizes: 1/8\" NB to 48\" NB",
+                        "Flange Face: RF (Raised Face), FF (Flat Face), RTJ (Ring Type Joint)",
+                        "Standards: ANSI B16.5, B16.47, MSS SP44, DIN, BS, EN",
+                        "Certifications: ISO 9001:2015",
                     ],
                     specs: [
-                        { parameter: "Grade", specification: "A106, A53, API 5L" },
-                        { parameter: "Outside Diameter", specification: "15 mm - 200 mm" },
-                        { parameter: "Wall Thickness", specification: "1.00 mm - 5.00 mm" },
-                        { parameter: "Length", specification: "3 m - 10 m" },
-                        { parameter: "Finish", specification: "Galvanized, Black" },
-                        { parameter: "Standard", specification: "API 5L, ASTM A53" },
+                        { parameter: "Material Grades", specification: "Stainless Steel, Carbon Steel, Alloy Steel, Duplex, Super Duplex, Nickel Alloys, Copper Alloys" },
+                        { parameter: "Size Range", specification: "1/8\" NB to 48\" NB" },
+                        { parameter: "Pressure Class", specification: "150, 300, 600, 900, 1500, 2500 LBS" },
+                        { parameter: "Face Type", specification: "RF, FF, RTJ" },
+                        { parameter: "Standards", specification: "ASME B16.5, ASME B16.47, MSS SP44, DIN, BS, EN" },
+                        { parameter: "Testing", specification: "Pitting Resistance, Chemical Analysis, Hardness, Micro/Macro, Flaring, Flattening" },
                     ],
-                    gallery: ["./images/pipes.jpg", "./images/bars.jpg", "./images/screws.jpg"],
+                    gallery: [
+                        "./images/flangs/SS WELD NECK FLANGES.png",
+                        "./images/flangs/CS WELD NECK FLANGES.webp",
+                        "./images/flangs/Alloy Steel WNRF Flanges.webp",
+                    ],
                     productFeatures: [
-                        "Excellent corrosion resistance111",
-                        "High mechanical strength11",
-                        "Custom lengths available",
-                        "Suitable for high-pressure systems",
+                        "Leak-proof welded connection",
+                        "High mechanical strength and durability",
+                        "Excellent corrosion resistance",
+                        "Suitable for high-pressure and high-temperature applications",
+                        "Available in customized sizes, thickness, and grades",
                     ],
+                    applications: [
+                        "Oil & Gas Processing",
+                        "Petrochemicals",
+                        "Power Generation",
+                        "Heat Exchangers & Condensers",
+                        "Pharmaceutical Equipment",
+                        "Offshore Drilling & Marine Applications",
+                        "Pulp & Paper Industry",
+                    ],
+                    exportCountries: [
+                        "USA", "UK", "UAE", "Saudi Arabia", "Germany", "Singapore", "Brazil", "South Africa", "Australia", "India"
+                    ]
                 },
                 product3: {
                     id: "product3",
-                    name: "Alloy Steel Products",
-                    image: "./images/bars.jpg",
+                    name: "Long Weld Neck Flanges (WNRF)",
+                    image: "./images/flangs/LONG_WELD/CS LONG WELD NECK FLANGES.jpg",
                     description:
-                        "Specialized alloy steel products engineered for high-performance applications. Enhanced strength and durability characteristics.",
+                        "Long Weld Neck Flanges (WNRF) are engineered to provide strong, leak-proof connections in piping systems. Manufactured by Amco Metals in stainless steel, carbon steel, alloy steel, duplex, super duplex, nickel, and copper alloys, these flanges offer high strength, corrosion resistance, and durability for industrial applications.",
                     features: [
-                        "Material: Alloy Steel 4140/4340",
-                        "Various shapes and sizes",
-                        "Heat treated options",
-                        "Superior strength properties",
-                        "Custom alloy compositions",
+                        "Pressure Classes: 150 LBS to 2500 LBS",
+                        "Sizes: 1/8\" NB to 48\" NB",
+                        "Flange Face: RF (Raised Face), FF (Flat Face), RTJ (Ring Type Joint)",
+                        "Standards: ANSI B16.5, B16.47, MSS SP44, DIN, BS, EN",
+                        "Certifications: ISO 9001:2015"
                     ],
                     specs: [
-                        { parameter: "Grade", specification: "4140, 4340, 8620" },
-                        { parameter: "Size Range", specification: "10 mm - 300 mm" },
-                        { parameter: "Length", specification: "1 m - 12 m" },
-                        { parameter: "Heat Treatment", specification: "As per requirement" },
-                        { parameter: "Finish", specification: "Hot Rolled, Cold Drawn" },
-                        { parameter: "Standard", specification: "ASTM A29, A322" },
+                        { parameter: "Material Grades", specification: "Stainless Steel, Carbon Steel, Alloy Steel, Duplex, Super Duplex, Nickel Alloys, Copper Alloys" },
+                        { parameter: "Size Range", specification: "1/8\" NB to 48\" NB" },
+                        { parameter: "Pressure Class", specification: "150, 300, 600, 900, 1500, 2500 LBS" },
+                        { parameter: "Face Type", specification: "RF, FF, RTJ" },
+                        { parameter: "Standards", specification: "ANSI B16.5, B16.47, MSS SP44, DIN, BS, EN" },
+                        { parameter: "Testing", specification: "Pitting Resistance, Chemical Analysis, Hardness, Micro/Macro, Flaring, Flattening" }
                     ],
-                    gallery: ["./images/bars.jpg", "./images/screws.jpg", "./images/pipes.jpg"],
+                    gallery: [
+                        "./images/flangs/LONG_WELD/CS LONG WELD NECK FLANGES.jpg",
+                        "./images/flangs/LONG_WELD/long-weld-neck-flanges.jpg",
+                        "./images/flangs/cs_long_weld_neck.jpeg"
+                    ],
                     productFeatures: [
-                        "Excellent corrosion resistance",
-                        "High mechanical strength",
-                        "Custom lengths available",
-                        "Suitable for high-pressure systems",
+                        "High mechanical strength and durability",
+                        "Leak-proof connections for pipelines",
+                        "Corrosion and abrasion resistant",
+                        "Supports high-pressure systems",
+                        "Customizable in thickness, size, and material grades"
                     ],
                 },
+
                 product4: {
                     id: "product4",
                     name: "Cold Drawn Precision Tubes",
@@ -382,127 +459,144 @@
             };
 
 
-        // Get product ID from URL parameters
-        function getProductIdFromURL() {
-            const urlParams = new URLSearchParams(window.location.search);
-            console.log("url-->>", urlParams)
-            return urlParams.get('product') || 'product1';
-        }
+            // Get product ID from URL parameters
+            function getProductIdFromURL() {
+                const urlParams = new URLSearchParams(window.location.search);
+                console.log("url-->>", urlParams)
+                return urlParams.get('product') || 'product1';
+            }
 
-        // Show loading state
-        function showLoading() {
-            document.getElementById('loadingSpinner').style.display = 'block';
-            document.getElementById('productDetailSection').style.display = 'none';
-            document.getElementById('errorMessage').style.display = 'none';
-        }
+            // Show loading state
+            function showLoading() {
+                document.getElementById('loadingSpinner').style.display = 'block';
+                document.getElementById('productDetailSection').style.display = 'none';
+                document.getElementById('errorMessage').style.display = 'none';
+            }
 
-        // Show error state
-        function showError() {
-            document.getElementById('loadingSpinner').style.display = 'none';
-            document.getElementById('productDetailSection').style.display = 'none';
-            document.getElementById('errorMessage').style.display = 'block';
-        }
+            // Show error state
+            function showError() {
+                document.getElementById('loadingSpinner').style.display = 'none';
+                document.getElementById('productDetailSection').style.display = 'none';
+                document.getElementById('errorMessage').style.display = 'block';
+            }
 
-        // Show product content
-        function showProduct() {
-            document.getElementById('loadingSpinner').style.display = 'none';
-            document.getElementById('productDetailSection').style.display = 'block';
-            document.getElementById('errorMessage').style.display = 'none';
-        }
+            // Show product content
+            function showProduct() {
+                document.getElementById('loadingSpinner').style.display = 'none';
+                document.getElementById('productDetailSection').style.display = 'block';
+                document.getElementById('errorMessage').style.display = 'none';
+            }
 
-        // Load and display product data
-        function loadProductData(productId) {
-            showLoading();
+            // Load and display product data
+            function loadProductData(productId) {
+                showLoading();
 
-            // Simulate loading delay (remove in production)
-            setTimeout(() => {
-                const product = productsDatabase[productId];
-                
-                if (!product) {
-                    showError();
-                    return;
-                }
+                // Simulate loading delay (remove in production)
+                setTimeout(() => {
+                    const product = productsDatabase[productId];
 
-                // Update page title
-                document.title = `${product.name} | JAINAM FERRO ALLOYS`;
+                    if (!product) {
+                        showError();
+                        return;
+                    }
 
-                // Update product image and alt text
-                const productImage = document.getElementById("product-image");
-                productImage.src = product.image;
-                productImage.alt = product.name;
+                    // Update page title
+                    document.title = `${product.name} | JAINAM FERRO ALLOYS`;
 
-                // Update product title and description
-                document.getElementById("product-title").textContent = product.name;
-                document.getElementById("product-desc").textContent = product.description;
+                    // Update product image and alt text
+                    const productImage = document.getElementById("product-image");
+                    productImage.src = product.image;
+                    productImage.alt = product.name;
 
-                // Update features list
-                const featuresList = document.getElementById("product-features");
-                featuresList.innerHTML = "";
-                product.features.forEach(feature => {
-                    const li = document.createElement("li");
-                    li.className = "mb-2";
-                    li.innerHTML = `<i class="fas fa-check-circle text-primary me-2"></i> ${feature}`;
-                    featuresList.appendChild(li);
+                    // Update product title and description
+                    document.getElementById("product-title").textContent = product.name;
+                    document.getElementById("product-desc").textContent = product.description;
+
+                    // Update features list
+                    const featuresList = document.getElementById("product-features");
+                    featuresList.innerHTML = "";
+                    product.features.forEach(feature => {
+                        const li = document.createElement("li");
+                        li.className = "mb-2";
+                        li.innerHTML = `<i class="fas fa-check-circle text-primary me-2"></i> ${feature}`;
+                        featuresList.appendChild(li);
+                    });
+
+                    // Update specifications table
+                    const specTableBody = document.getElementById("product-spec-table");
+                    specTableBody.innerHTML = "";
+                    product.specs.forEach(spec => {
+                        const tr = document.createElement("tr");
+                        tr.innerHTML = `<td><strong>${spec.parameter}</strong></td><td>${spec.specification}</td>`;
+                        specTableBody.appendChild(tr);
+                    });
+
+                    const prodFeatList = document.getElementById("productFeaturesList");
+                    prodFeatList.innerHTML = "";
+                    product.productFeatures.forEach(prodList => {
+                        const li = document.createElement("li");
+                        li.className = "list-group-item";
+                        li.innerHTML = `<i class="fas fa-check text-secondary me-2"></i> ${prodList}`;
+                        prodFeatList.appendChild(li);
+                    });
+
+                    function formatFileName(imgSrc) {
+                        // 1. last part nikalo (path me ho to)
+                        let fileName = imgSrc.split('/').pop();
+
+                        // 2. extension hatao (agar ho to)
+                        fileName = fileName.split('.')[0];
+
+                        // 3. underscores ko space me convert karo
+                        fileName = fileName.replace(/_/g, " ");
+
+                        // 4. Title Case (Har word ka first letter capital)
+                        fileName = fileName.replace(/\b\w/g, char => char.toUpperCase());
+
+                        return fileName;
+                    }
+
+                    // Update gallery images
+                    const galleryContainer = document.getElementById("gallery-images");
+                    galleryContainer.innerHTML = "";
+                    product.gallery.forEach(imgSrc => {
+                        const div = document.createElement("div");
+                        div.className = "col-md-4";
+                        div.innerHTML = `<img src="${imgSrc}" class="img-fluid rounded" alt="${product.name}"><div style="text-align: center;">${formatFileName(imgSrc)}</div>`;
+                        galleryContainer.appendChild(div);
+                    });
+
+                    showProduct();
+                }, 500); // Simulate loading delay
+            }
+
+            // Initialize page
+            function initializePage() {
+                const productId = getProductIdFromURL();
+                loadProductData(productId);
+
+                // Gallery modal trigger
+                document.getElementById('viewGallery').addEventListener('click', function () {
+                    const galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+                    galleryModal.show();
                 });
 
-                // Update specifications table
-                const specTableBody = document.getElementById("product-spec-table");
-                specTableBody.innerHTML = "";
-                product.specs.forEach(spec => {
-                    const tr = document.createElement("tr");
-                    tr.innerHTML = `<td><strong>${spec.parameter}</strong></td><td>${spec.specification}</td>`;
-                    specTableBody.appendChild(tr);
+                // Handle browser back/forward buttons
+                window.addEventListener('popstate', function () {
+                    const newProductId = getProductIdFromURL();
+                    loadProductData(newProductId);
                 });
+            }
 
-                const prodFeatList = document.getElementById("productFeaturesList");
-                prodFeatList.innerHTML = "";
-                product.productFeatures.forEach(prodList => {
-                    const li = document.createElement("li");
-                    li.className = "list-group-item";
-                    li.innerHTML = `<i class="fas fa-check text-secondary me-2"></i> ${prodList}`;
-                    prodFeatList.appendChild(li);
-                });
+            // Initialize when DOM is loaded
+            document.addEventListener("DOMContentLoaded", initializePage);
 
-                // Update gallery images
-                const galleryContainer = document.getElementById("gallery-images");
-                galleryContainer.innerHTML = "";
-                product.gallery.forEach(imgSrc => {
-                    const div = document.createElement("div");
-                    div.className = "col-md-4";
-                    div.innerHTML = `<img src="${imgSrc}" class="img-fluid rounded" alt="${product.name}">`;
-                    galleryContainer.appendChild(div);
-                });
-
-                showProduct();
-            }, 500); // Simulate loading delay
-        }
-
-        // Initialize page
-        function initializePage() {
-            const productId = getProductIdFromURL();
-            loadProductData(productId);
-
-            // Gallery modal trigger
-            document.getElementById('viewGallery').addEventListener('click', function() {
-                const galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
-                galleryModal.show();
+            // Handle image loading errors
+            document.getElementById('product-image').addEventListener('error', function () {
+                this.src = './images/placeholder.jpg'; // Fallback image
+                this.alt = 'Product image not available';
             });
-
-            // Handle browser back/forward buttons
-            window.addEventListener('popstate', function() {
-                const newProductId = getProductIdFromURL();
-                loadProductData(newProductId);
-            });
-        }
-
-        // Initialize when DOM is loaded
-        document.addEventListener("DOMContentLoaded", initializePage);
-
-        // Handle image loading errors
-        document.getElementById('product-image').addEventListener('error', function() {
-            this.src = './images/placeholder.jpg'; // Fallback image
-            this.alt = 'Product image not available';
-        });
-    </script>
+        </script>
 </body>
+
 </html>

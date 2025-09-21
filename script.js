@@ -273,18 +273,17 @@ function initGallery() {
 
 function intiCertificate() {
   const certificateImage = document.querySelectorAll(".certificateViewBtn");
-  console.log("-->", certificateImage)
+  console.log("-->", certificateImage);
   certificateImage.forEach((item) => {
     item.addEventListener("click", function () {
       const img = this.querySelector("img");
-      console.log("img->",img)
+      console.log("img->", img);
       if (img) {
         createLightbox(img.src, img.alt);
       }
     });
   });
 }
-
 
 // Create lightbox modal
 function createLightbox(imageSrc, imageAlt) {
@@ -359,7 +358,7 @@ function createLightbox(imageSrc, imageAlt) {
 }
 
 // Initialize gallery when DOM is loaded
-document.addEventListener("DOMContentLoaded", initGallery);
+// document.addEventListener("DOMContentLoaded", initGallery);
 document.addEventListener("DOMContentLoaded", intiCertificate);
 
 // ===== COUNTER ANIMATION =====
@@ -701,7 +700,6 @@ function slide(wrapper, items, prev, next) {
 }
 
 slide(slider, sliderItems, prev, next);
-
 
 const track = document.querySelector(".carousel-track");
 const indSlides = Array.from(track.children);
