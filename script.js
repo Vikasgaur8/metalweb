@@ -271,6 +271,20 @@ function initGallery() {
   });
 }
 
+// function intiCertificate() {
+//   const galleryItems = document.querySelectorAll(".gallery-item");
+
+//   galleryItems.forEach((item) => {
+//     item.addEventListener("click", function () {
+//       const img = this.querySelector("img");
+//       if (img) {
+//         createLightbox(img.src, img.alt);
+//       }
+//     });
+//   });
+// }
+
+
 // Create lightbox modal
 function createLightbox(imageSrc, imageAlt) {
   // Create lightbox elements
@@ -529,7 +543,7 @@ function initCustomCursor() {
 
 // ===== CONSOLE MESSAGE =====
 console.log(
-  "%c🏭 Sailco Metal & Tubes Industries",
+  "%c🏭 Developed by Vikas Gaur",
   "color: #d4a853; font-size: 24px; font-weight: bold;"
 );
 console.log(
