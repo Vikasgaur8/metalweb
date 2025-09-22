@@ -874,12 +874,12 @@ const products = [
 const gallery = document.getElementById('productGallery');
 products.forEach(product => {
   const col = document.createElement('div');
-  col.className = 'col col-lg-4 col-md-6';
+  col.className = 'col-lg-4 col-md-6';
   col.innerHTML = `
     <div class="gallery-item scroll-animate">
       <a href="product-details.html?product=${product.id}" target="_self">
         <img src="${product.img}" alt="${product.alt}" />
-        <div class="gallery-overlay text-white">${product.name}</div>
+        <div class="gallery-overlay">${product.name}</div>
       </a>
     </div>
   `;
