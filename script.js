@@ -879,7 +879,7 @@ products.forEach(product => {
     <div class="gallery-item scroll-animate">
       <a href="product-details.html?product=${product.id}" target="_self">
         <img src="${product.img}" alt="${product.alt}" />
-        <div class="gallery-overlay">${product.name}</div>
+        <div class="gallery-overlay text-white">${product.name}</div>
       </a>
     </div>
   `;
