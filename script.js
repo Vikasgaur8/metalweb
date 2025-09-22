@@ -785,3 +785,105 @@ window.addEventListener("resize", () => {
 setInterval(() => {
   nextSlide();
 }, 1800);
+
+
+
+//------------------------------Product data array----------------------
+const products = [
+  {
+    id: 'product1',
+    name: 'SLIP ON FLANGES',
+    img: './images/flangs/SLIP ON FLANGES/Alloy-Steel-Slip-On-Flanges.webp',
+    alt: 'Stainless Steel Tubes'
+  },
+  {
+    id: 'product2',
+    name: 'WELD NECK FLANGES',
+    img: './images/flangs/WELD NECK FLANGES/Alloy Steel WNRF Flanges.webp',
+    alt: 'Carbon Steel Pipes'
+  },
+  {
+    id: 'product3',
+    name: 'LONG_WELD',
+    img: './images/flangs/LONG_WELD/Alloy Steel Long Weld Neck Flanges.jpg',
+    alt: 'Alloy Steel Products'
+  },
+  {
+    id: 'product4',
+    name: 'AWWA_FLANGES',
+    img: './images/flangs/AWWA_FLANGES/Awwa Flanges.jpg',
+    alt: 'Cold Drawn Precision Tubes'
+  },
+  {
+    id: 'product5',
+    name: 'Body Flanges',
+    img: './images/flangs/Body Flanges/Body Flanges.jpg',
+    alt: 'Industrial Steel Pipes'
+  },
+  {
+    id: 'product6',
+    name: 'BLIND FLANGES',
+    img: './images/flangs/BLIND FLANGES/BLIND FLANGES.jpg',
+    alt: 'Custom Steel Solutions'
+  },
+  {
+    id: 'product7',
+    name: 'THREADED FLANGES',
+    img: './images/flangs/THREADED FLANGES/Stainless Threaded Flanges.jpg',
+    alt: 'Custom Steel Solutions'
+  },
+  {
+    id: 'product8',
+    name: 'DIN FLANGES',
+    img: './images/flangs/DIN FLANGES/DIN PN6 PN40 Flanges.jpg',
+    alt: 'Custom Steel Solutions'
+  },
+  {
+    id: 'product9',
+    name: 'PADDLE BLANK FLANGES',
+    img: './images/flangs/PADDLE BLANK FLANGES/Hydrotest Flanges.jpg',
+    alt: 'Custom Steel Solutions'
+  },
+  {
+    id: 'product10',
+    name: 'PADDLE SPACER FLANGES',
+    img: './images/flangs/PADDLE SPACER FLANGES/Paddle Spacer Flanges.jpg',
+    alt: 'Custom Steel Solutions'
+  },
+  {
+    id: 'product11',
+    name: 'SPECTACLE BLIND FLANGES',
+    img: './images/flangs/SPECTACLE BLIND FLANGES/Spectacle Blind Flanges_.jpg',
+    alt: 'Custom Steel Solutions'
+  },
+  {
+    id: 'product12',
+    name: 'RING TYPE JOINT FLANGES',
+    img: './images/flangs/RING TYPE JOINT FLANGES/ring-type-joint-flanges.jpg',
+    alt: 'Custom Steel Solutions'
+  },
+  {
+    id: 'product13',
+    name: 'Nipo Flange',
+    img: './images/flangs/Nipo Flange/Steel Nipoflange.jpg',
+    alt: 'Custom Steel Solutions'
+  }
+];
+
+// Dynamically render gallery
+const gallery = document.getElementById('productGallery');
+products.forEach(product => {
+  const col = document.createElement('div');
+  col.className = 'col col-lg-4 col-md-6';
+  col.innerHTML = `
+    <div class="gallery-item scroll-animate">
+      <a href="product-details.html?product=${product.id}" target="_self">
+        <img src="${product.img}" alt="${product.alt}" />
+        <div class="gallery-overlay text-white">${product.name}</div>
+      </a>
+    </div>
+  `;
+  gallery.appendChild(col);
+});
+
+// Optional: animation if using scroll-animate, add JS for that.
