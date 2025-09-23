@@ -791,83 +791,230 @@ setInterval(() => {
 //------------------------------Product data array----------------------
 const products = [
   {
-    id: 'product1',
-    name: 'SLIP ON FLANGES',
-    img: './images/flangs/SLIP ON FLANGES/Alloy-Steel-Slip-On-Flanges.webp',
-    alt: 'Stainless Steel Tubes'
+    id: "product1",
+    name: "SLIP ON FLANGES",
+    img: "./images/flangs/SLIP ON FLANGES/Alloy-Steel-Slip-On-Flanges.webp",
+    alt: "Stainless Steel Tubes",
   },
   {
-    id: 'product2',
-    name: 'WELD NECK FLANGES',
-    img: './images/flangs/WELD NECK FLANGES/Alloy Steel WNRF Flanges.webp',
-    alt: 'Carbon Steel Pipes'
+    id: "product2",
+    name: "WELD NECK FLANGES",
+    img: "./images/flangs/WELD NECK FLANGES/Alloy Steel WNRF Flanges.webp",
+    alt: "Carbon Steel Pipes",
   },
   {
-    id: 'product3',
-    name: 'LONG_WELD',
-    img: './images/flangs/LONG_WELD/Alloy Steel Long Weld Neck Flanges.jpg',
-    alt: 'Alloy Steel Products'
+    id: "product3",
+    name: "LONG_WELD",
+    img: "./images/flangs/LONG_WELD/Alloy Steel Long Weld Neck Flanges.jpg",
+    alt: "Alloy Steel Products",
   },
   {
-    id: 'product4',
-    name: 'AWWA_FLANGES',
-    img: './images/flangs/AWWA_FLANGES/Awwa Flanges.jpg',
-    alt: 'Cold Drawn Precision Tubes'
+    id: "product4",
+    name: "AWWA_FLANGES",
+    img: "./images/flangs/AWWA_FLANGES/Awwa Flanges.jpg",
+    alt: "Cold Drawn Precision Tubes",
   },
   {
-    id: 'product5',
-    name: 'Body Flanges',
-    img: './images/flangs/Body Flanges/Body Flanges.jpg',
-    alt: 'Industrial Steel Pipes'
+    id: "product5",
+    name: "Body Flanges",
+    img: "./images/flangs/Body Flanges/Body Flanges.jpg",
+    alt: "Industrial Steel Pipes",
   },
   {
-    id: 'product6',
-    name: 'BLIND FLANGES',
-    img: './images/flangs/BLIND FLANGES/BLIND FLANGES.jpg',
-    alt: 'Custom Steel Solutions'
+    id: "product6",
+    name: "BLIND FLANGES",
+    img: "./images/flangs/BLIND FLANGES/BLIND FLANGES.jpg",
+    alt: "Custom Steel Solutions",
   },
   {
-    id: 'product7',
-    name: 'THREADED FLANGES',
-    img: './images/flangs/THREADED FLANGES/Stainless Threaded Flanges.jpg',
-    alt: 'Custom Steel Solutions'
+    id: "product7",
+    name: "THREADED FLANGES",
+    img: "./images/flangs/THREADED FLANGES/Stainless Threaded Flanges.jpg",
+    alt: "Custom Steel Solutions",
   },
   {
-    id: 'product8',
-    name: 'DIN FLANGES',
-    img: './images/flangs/DIN FLANGES/DIN PN6 PN40 Flanges.jpg',
-    alt: 'Custom Steel Solutions'
+    id: "product8",
+    name: "DIN FLANGES",
+    img: "./images/flangs/DIN FLANGES/DIN PN6 PN40 Flanges.jpg",
+    alt: "Custom Steel Solutions",
   },
   {
-    id: 'product9',
-    name: 'PADDLE BLANK FLANGES',
-    img: './images/flangs/PADDLE BLANK FLANGES/Hydrotest Flanges.jpg',
-    alt: 'Custom Steel Solutions'
+    id: "product9",
+    name: "PADDLE BLANK FLANGES",
+    img: "./images/flangs/PADDLE BLANK FLANGES/Hydrotest Flanges.jpg",
+    alt: "Custom Steel Solutions",
   },
   {
-    id: 'product10',
-    name: 'PADDLE SPACER FLANGES',
-    img: './images/flangs/PADDLE SPACER FLANGES/Paddle Spacer Flanges.jpg',
-    alt: 'Custom Steel Solutions'
+    id: "product10",
+    name: "PADDLE SPACER FLANGES",
+    img: "./images/flangs/PADDLE SPACER FLANGES/Paddle Spacer Flanges.jpg",
+    alt: "Custom Steel Solutions",
   },
   {
-    id: 'product11',
-    name: 'SPECTACLE BLIND FLANGES',
-    img: './images/flangs/SPECTACLE BLIND FLANGES/Spectacle Blind Flanges_.jpg',
-    alt: 'Custom Steel Solutions'
+    id: "product11",
+    name: "SPECTACLE BLIND FLANGES",
+    img: "./images/flangs/SPECTACLE BLIND FLANGES/Spectacle Blind Flanges_.jpg",
+    alt: "Custom Steel Solutions",
   },
   {
-    id: 'product12',
-    name: 'RING TYPE JOINT FLANGES',
-    img: './images/flangs/RING TYPE JOINT FLANGES/ring-type-joint-flanges.jpg',
-    alt: 'Custom Steel Solutions'
+    id: "product12",
+    name: "RING TYPE JOINT FLANGES",
+    img: "./images/flangs/RING TYPE JOINT FLANGES/ring-type-joint-flanges.jpg",
+    alt: "Custom Steel Solutions",
   },
   {
-    id: 'product13',
-    name: 'Nipo Flange',
-    img: './images/flangs/Nipo Flange/Steel Nipoflange.jpg',
-    alt: 'Custom Steel Solutions'
-  }
+    id: "product13",
+    name: "Nipo Flange",
+    img: "./images/flangs/Nipo Flange/Steel Nipoflange.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  // Buttweld Fittings
+  {
+    id: "product14",
+    name: "Pipe Tees",
+    img: "./images/Buttweld Fittings/Tee/SS Cross Tee.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product15",
+    name: "Pipe Reducers",
+    img: "./images/Buttweld Fittings/CONCENTRIC REDUCER/Duplex Steel Concentric Reducer.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product16",
+    name: "Stainless Steel Tube",
+    img: "./images/Buttweld Fittings/ECCENTRIC REDUCER/Duplex Steel Concentric Reducer.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product17",
+    name: "ASME / ANSI B16.9 Barred Tee",
+    img: "./images/Buttweld Fittings/Barred Tees/Buttweld Barred Tee.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product18",
+    name: "ANSI B16.28 5D/6D Pipe Bend",
+    img: "./images/Buttweld Fittings/BEND/SS 6D Bend.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product19",
+    name: "ASTM A403 Stainless Steel Reducing Tee",
+    img: "./images/Buttweld Fittings/Butt Weld Reducing Tee/Reducing Tee.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product20",
+    name: "ANSI B16.28 Stainless Steel Elbow",
+    img: "./images/Buttweld Fittings/ELBOW/Carbon Steel 45° Elbow.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product21",
+    name: "ANSI B16.28 Reducing Elbow",
+    img: "./images/Buttweld Fittings/Reducing Elbow/Carbon Steel 45° Reducing Elbow.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product22",
+    name: "ANSI B16.28 Stainless Steel Cross Tee",
+    img: "./images/Buttweld Fittings/CROSS TEE/SS Cross Tee.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product23",
+    name: "ANSI B16.28 Swage Nipple",
+    img: "./images/Buttweld Fittings/Swage Nipple/SS Swage Nipple.webp",
+    alt: "Custom Steel Solutions",
+  },
+  //COMPRESSION TUBE FITTINGS
+  {
+    id: "product24",
+    name: "Stainless Steel Insulation Gasket Kits",
+    img: "./images/COMPRESSION TUBE FITTINGS/MALE CONNECTOR/Male Connector.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product25",
+    name: "Parker 8-6 HBZ-SS Reducing Union",
+    img: "./images/COMPRESSION TUBE FITTINGS/TUBE TO UNION/Tube To Union.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product26",
+    name: "Forged Stainless Steel Tube Union Elbow",
+    img: "./images/COMPRESSION TUBE FITTINGS/UNION ELBOW/SS Union Elbow.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product27",
+    name: "Corten Steel Panels",
+    img: "./images/COMPRESSION TUBE FITTINGS/VALVES/CS Check Valves.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  //Forged Fittings
+  {
+    id: "product28",
+    name: "Forged Cross Pipe Fittings",
+    img: "./images/Forged Fittings/FORGED TEE/Socketweld Forged Tee.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product29",
+    name: "ANSI B16.9 Forged Concentric Reducer",
+    img: "./images/Forged Fittings/FORGED REDUCER/Forged Concentric Reducer.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product30",
+    name: "Forged Cross Pipe Fittings",
+    img: "./images/Forged Fittings/FORGED CROSS/Forged Threaded Cross.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product31",
+    name: "ANSI B16.9 Forged Welding Outlets",
+    img: "./images/Forged Fittings/WELDING OUTLET/SS Welding Outlets.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product32",
+    name: "ASTM A182 Nipple Outlets",
+    img: "./images/Forged Fittings/NIPPLE OUTLET/SS Nipple Outlet.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product33",
+    name: "ASTM A182 Nipple Outlets",
+    img: "./images/Forged Fittings/Sweep Outlet/SS Sweep Outlet.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product34",
+    name: "ASTM A182 Flange Outlets",
+    img: "./images/Forged Fittings/Flange Outlets/SS Flange Outlets.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product35",
+    name: "Stainless Steel Threaded Outlets",
+    img: "./images/Forged Fittings/Threaded Outlet/Threaded Outlet.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product36",
+    name: "Elbow Outlet Pipe Fittings",
+    img: "./images/Forged Fittings/Elbow Outlet/Elbow Outlets.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product37",
+    name: "ASTM A234 WP11 Pipe Reducing Tee",
+    img: "./images/Forged Fittings/Forged Fittings - Reducing Tee/Carbon Steel Reducing Tee.jpg",
+    alt: "Custom Steel Solutions",
+  },
 ];
 
 // Dynamically render gallery
