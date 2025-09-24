@@ -1015,6 +1015,173 @@ const products = [
     img: "./images/Forged Fittings/Forged Fittings - Reducing Tee/Carbon Steel Reducing Tee.jpg",
     alt: "Custom Steel Solutions",
   },
+  {
+    id: "product38",
+    name: "ASTM A325 Hex Bolts",
+    img: "./images/Fasteners/Hex Bolts/Hex Bolt.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product39",
+    name: "ASTM A325 Heavy Hex Nuts",
+    img: "./images/Fasteners/HEAVY HEX NUTS/Steel Heavy Hex Nuts.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product40",
+    name: "ASTM A193 B7 Stud Bolts",
+    img: "./images/Fasteners/STUD BOLTS/Stainless Steel Studs.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product41",
+    name: "ASTM A325 Washers",
+    img: "./images/Fasteners/WASHERS/SS Flat Washer.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product42",
+    name: "Stainless Steel Anchor & Foundation Bolts",
+    img: "./images/Fasteners/Anchor Bolts/Sleeve Anchor Bolts.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product43",
+    name: "ASTM A325 Eye Bolts",
+    img: "./images/Fasteners/Eye Bolts/Shoulder Eye Bolt.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product44",
+    name: "ASTM A325 Fasteners",
+    img: "./images/Fasteners/HILTI FASTENERS/Anchor.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product45",
+    name: "ASTM A325 U Bolts",
+    img: "./images/Fasteners/U BOLTS/Stainless Steel U Bolt.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product46",
+    name: "V Shaped Refractory Anchors",
+    img: "./images/REFRACTORY ANCHORS/V ANCHORS/Refractory V Anchors.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product47",
+    name: "Stainless Steel Y Type Refractory Anchors",
+    img:
+      "./images/REFRACTORY ANCHORS/Y TYPE ANCHORS/Refractory Y Type Anchors.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product48",
+    name: "U Type Refractory Anchors",
+    img: "./images/REFRACTORY ANCHORS/U ANCHORS/SS U ANCHORS.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product49",
+    name: "Customized Stainless Steel Refractory Anchors",
+    img:
+      "./images/REFRACTORY ANCHORS/CUSTOMIZE REFRACTORY ANCHORS/Refractory Anchors UV Type.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product50",
+    name: "Carbon Steel Forged Rings ASTM A105",
+    img:
+      "./images/FORGING PRODUCTS/FORGED RINGS/Carbon Steel Forged Ring.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product51",
+    name: "ASTM A105 Carbon Steel Rotor Shafts",
+    img: "./images/FORGING PRODUCTS/ROTER SHAFT/ROTER SHAFT.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product52",
+    name: "Stainless Steel and Carbon Steel Propeller Shafts & Forged Round Bars",
+    img: "./images/FORGING PRODUCTS/ROUND BARS/CS Forged Round Bar.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product53",
+    name: "Customized Stainless Steel and Carbon Steel Forgings",
+    img:
+      "./images/FORGING PRODUCTS/CUSTOMIZE FORGING/Customize Hot Forging.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product54",
+    name: "Stainless Steel Insulation Gasket Kits",
+    img:
+      "./images/GASKETS/INSULATION GASKET KITS/Monel Insulation Gasket.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product55",
+    name: "Spiral Wound Gaskets",
+    img: "./images/GASKETS/SPIRAL WOUND GASKETS/Spiral Wound Gaskets_.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product56",
+    name: "Alloy 20 and Stainless Steel Ring Type Joint Gaskets",
+    img: "./images/GASKETS/RING JOINT TYPE GASKETS/RING JOINT TYPE GASKETS.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product57",
+    name: "SS 316 and High Nickel Octagonal Ring Type Joint Gaskets",
+    img: "./images/GASKETS/OCTOGONAL GASKETS/OCTOGONAL GASKETS.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product58",
+    name: "Stainless Steel Graphite Filler Gaskets",
+    img:"./images/GASKETS/GRAPHITE FILLER GASKETS/Monel Graphite Filler Gaskets.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product59",
+    name: "Stainless Steel Designer Sheets",
+    img: "./images/DESIGNER SHEETS/Rose Gold Mirror Sheet.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product60",
+    name: "Corten Steel Panels",
+    img: "./images/OTHER/Corten Steel Panels/CORTEN PANEL.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product61",
+    name: "Stainless Steel T, U & C Profiles",
+    img:"./images/OTHER/Stainless Steel 304 T, C & U Profile/stainless steel t patti.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product62",
+    name: "Stainless Steel PVD Coated Color Profiles",
+    img:"./images/OTHER/Colour PVD Profile/Stainless Steel 316 Decorative Color C Profile.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product63",
+    name: "Stainless Steel Omega Profiles",
+    img: "./images/OTHER/Omega Profiles/Profile Omega.jpg",
+    alt: "Custom Steel Solutions",
+  },
+  {
+    id: "product64",
+    name: "Corten Steel Planters",
+    img: "./images/OTHER/CORTEN PLANTERS/Corten Steel Square Planters.jpg",
+    alt: "Custom Steel Solutions",
+  },
 ];
 
 // Dynamically render gallery
