@@ -1234,3 +1234,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(document.querySelector(".counter-section"));
 });
+
+// Close WhatsApp button when user clicks X
+document.getElementById('whatsappClose').addEventListener('click', function() {
+  document.getElementById('whatsappWrapper').style.display = 'none';
+});
