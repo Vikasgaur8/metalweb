@@ -1201,3 +1201,36 @@ products.forEach(product => {
 });
 
 // Optional: animation if using scroll-animate, add JS for that.
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+  const speed = 200; // smaller = faster
+
+  const runCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / speed;
+
+    if (count < target) {
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(() => runCounter(counter), 20);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          counters.forEach((counter) => runCounter(counter));
+          observer.disconnect(); // run only once
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(document.querySelector(".counter-section"));
+});
