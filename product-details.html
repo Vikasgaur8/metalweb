@@ -50,7 +50,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#about">Company</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#services">Quality</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="index.html#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./productsFilter.html">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="./certificate.html">Certificate</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact Us</a></li>
                 </ul>
@@ -70,7 +70,7 @@
     <div class="error-message" id="errorMessage">
         <h3>Product Not Found</h3>
         <p>The requested product could not be found.</p>
-        <a href="index.html#products" class="btn btn-primary-custom">Back to Products</a>
+        <a href="./productsFilter.html" class="btn btn-primary-custom">Back to Products</a>
     </div>
 
     <!-- Product Detail Section -->
@@ -97,7 +97,7 @@
                         <div class="d-flex gap-3">
                             <a href="index.html#contact" class="btn btn-primary-custom Enquirebtn"><i
                                     class="fas fa-paper-plane"></i> Enquire Now</a>
-                            <a href="index.html#products" class="btn btn-outline-custom">Back to Products</a>
+                            <a href="./productsFilter.html" class="btn btn-outline-custom">Back to Products</a>
                         </div>
                     </div>
                 </div>
@@ -174,8 +174,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html#about">About Us</a></li>
                         <li><a href="index.html#services">Quality</a></li>
-                        <li><a href="index.html#products">Products</a></li>
-                        <li><a href="/certificate.html">Certificate</a></li>
+                        <li><a href="./productsFilter.html">Products</a></li>
+                        <li><a href="certificate.html">Certificate</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -212,36 +212,7 @@
         <script>
             // Products Database - Expanded with more products
             const productsDatabase = {
-                // product1: {
-                //     id: "product1",
-                //     name: "Stainless Steel Tube",
-                //     image: "./images/screws.jpg",
-                //     description:
-                //         "High-grade stainless steel tubes manufactured for industrial applications. Corrosion-resistant, highly durable, customizable sizing.",
-                //     features: [
-                //         "Material: Stainless Steel 304/316",
-                //         'Diameter: 1/2" to 6"',
-                //         "Length: Up to 12 meters",
-                //         "Surface Finish: Polished/Matte",
-                //         "Certifications: ISO 9001:2015",
-                //     ],
-                //     specs: [
-                //         { parameter: "Grade", specification: "304, 316, 321" },
-                //         { parameter: "Outside Diameter", specification: "12 mm - 152 mm" },
-                //         { parameter: "Wall Thickness", specification: "0.50 mm - 4.00 mm" },
-                //         { parameter: "Length", specification: "2 m - 12 m" },
-                //         { parameter: "Finish", specification: "Polished, Matte" },
-                //         { parameter: "Standard", specification: "ASTM A312, A213" },
-                //     ],
-                //     gallery: ["./images/screws.jpg", "./images/pipes.jpg", "./images/bars.jpg"],
-                //     productFeatures: [
-                //         "Excellent corrosion resistance",
-                //         "High mechanical strength",
-                //         "Custom lengths available",
-                //         "Suitable for high-pressure systems",
-                //     ],
-                // },
-                product1: {
+                1: {
                     id: "product1",
                     name: "Slip On Flanges (SORF Flanges)",
                     image: "./images/flangs/SLIP ON FLANGES/SS_SLIP_ON_FLANGES.jpeg",
@@ -283,7 +254,7 @@
                         "USA", "UK", "UAE", "Saudi Arabia", "Singapore", "Brazil", "Germany", "South Africa", "Australia", "India"
                     ]
                 },
-                product2: {
+                2: {
                     id: "product2",
                     name: "Weld Neck Flanges (WNRF Flanges)",
                     image: "./images/flangs/WELD NECK FLANGES/SS WELD NECK FLANGES.png",
@@ -329,7 +300,7 @@
                         "USA", "UK", "UAE", "Saudi Arabia", "Germany", "Singapore", "Brazil", "South Africa", "Australia", "India"
                     ]
                 },
-                product3: {
+                3: {
                     id: "product3",
                     name: "Long Weld Neck Flanges (WNRF)",
                     image: "./images/flangs/LONG_WELD/CS LONG WELD NECK FLANGES.jpg",
@@ -363,7 +334,7 @@
                         "Customizable in thickness, size, and material grades"
                     ],
                 },
-                product4: {
+                4: {
                     id: "product4",
                     name: "AWWA Flanges",
                     image: "./images/flangs/AWWA_FLANGES/Awwa Flanges.jpg",
@@ -397,7 +368,7 @@
                         "Available in customized thickness, sizes, and material grades"
                     ],
                 },
-                product5: {
+                5: {
                     id: "product5",
                     name: "Body Flanges",
                     image: "./images/flangs/Body Flanges/Body Flanges.jpg",
@@ -431,7 +402,7 @@
                         "Customizable in sizes, thickness, and materials"
                     ],
                 },
-                product6: {
+                6: {
                     id: "product6",
                     name: "Blind Flanges (BLRF Flanges)",
                     image: "./images/flangs/BLIND FLANGES/Alloy Steel Blind Flanges.jpg",
@@ -482,7 +453,7 @@
                         "Ghana", "South Africa"
                     ]
                 },               
-                product7: {
+                7: {
                     id: "product7",
                     name: "Threaded Flanges",
                     image: "./images/flangs/THREADED FLANGES/Alloy Steel Threaded Flanges.jpg",
@@ -533,7 +504,7 @@
                         "Ghana", "South Africa"
                     ]
                 },
-                product8: {
+                8: {
                     id: "product8",
                     name: "DIN Flanges",
                     image: "./images/flangs/DIN FLANGES/DIN PN-10 SS Slip On Flanges.jpg",
@@ -596,7 +567,7 @@
                         "Carbon Steel DIN Flanges"
                     ]
                 },
-                product9: {
+                9: {
                     id: "product9",
                     name: "Paddle Blind Flanges",
                     image: "./images/flangs/PADDLE BLANK FLANGES/Hydrotest Flanges.jpg",
@@ -660,7 +631,7 @@
                         "Forged Steel Paddle Blind Flanges", "DIN Paddle Blind Flanges Exporter"
                     ]
                 },
-                product10: {
+                10: {
                     id: "product10",
                     name: "Paddle Spacer Flanges",
                     image: "./images/flangs/PADDLE SPACER FLANGES/Paddle Spacer Flanges.jpg",
@@ -724,7 +695,7 @@
                         "DIN Paddle Spacer Flanges Exporter", "Paddle Spacer Flanges Stockist"
                     ]
                 },
-                product11: {
+                11: {
                     id: "product11",
                     name: "Spectacle Blind Flanges",
                     image: "./images/flangs/SPECTACLE BLIND FLANGES/SPECTACLE BLIND FLANGES.jpg",
@@ -788,7 +759,7 @@
                         "Spectacle Blind Flanges Stockist", "Blind Flanges Distributors"
                     ]
                 },
-                product12: {
+                12: {
                     id: "product12",
                     name: "Ring Type Joint (RTJ) Flanges",
                     image: "./images/flangs/RING TYPE JOINT FLANGES/CS Ring Type Joint Flanges.jpg",
@@ -852,7 +823,7 @@
                         "Ring Type Joint Flanges Stockist", "RTJ Flanges Distributors"
                     ]
                 },
-                product13: {
+                13: {
                     id: "product13",
                     name: "Nipo Flanges",
                     image: "./images/flangs/Nipo Flange/CS Ring Type Joint Flanges.jpg",
@@ -917,7 +888,7 @@
                     ]
                 },
                 // Buttweld Fittings
-                product14: {
+                14: {
                     id: "product14",
                     name: "Pipe Tees",
                     image: "./images/Buttweld Fittings/Tee/SS Cross Tee.jpg",
@@ -984,7 +955,7 @@
                         "Steel Welded Reducing Tee Stockist", "Reducing Tee Distributors"
                     ]
                 },
-                product15: {
+                15: {
                     id: "product15",
                     name: "Pipe Reducers",
                     image: "./images/Buttweld Fittings/CONCENTRIC REDUCER/Duplex Steel Concentric Reducer.jpg",
@@ -1050,7 +1021,7 @@
                         "Alloy Steel Reducer Supplier", "Hastelloy Concentric Reducer"
                     ]
                 },
-                product16: {
+                16: {
                     id: "product16",
                     name: "Stainless Steel Tube",
                     shortDescription: "High-grade stainless steel tubes designed for demanding industrial applications with excellent corrosion resistance and customizable options.",
@@ -1100,7 +1071,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product17: {
+                17: {
                     id: "product17",
                     name: "ASME / ANSI B16.9 Barred Tee",
                     shortDescription: "High-quality barred tees manufactured with precision for industrial and racing hose applications. Available in multiple materials including stainless steel, Hastelloy, Inconel, and nickel alloys.",
@@ -1153,7 +1124,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product18: {
+                18: {
                     id: "product18",
                     name: "ANSI B16.28 5D/6D Pipe Bend",
                     shortDescription: "High precision 5D and 6D pipe bends manufactured with induction bending technology offering smooth flow, corrosion resistance, and durability for industrial and petrochemical applications.",
@@ -1211,7 +1182,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product19: {
+                19: {
                     id: "product19",
                     name: "ASTM A403 Stainless Steel Reducing Tee",
                     shortDescription: "Premium ASTM A403 standard stainless steel reducing tees designed for efficient piping with high impact strength, corrosion resistance, and turbulence-free flow.",
@@ -1270,7 +1241,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product20: {
+                20: {
                     id: "product20",
                     name: "ANSI B16.28 Stainless Steel Elbow",
                     shortDescription: "Precision-engineered ANSI B16.28 elbows used to change fluid flow direction with superior durability, corrosion resistance, and compliance with industrial standards.",
@@ -1326,7 +1297,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product21: {
+                21: {
                     id: "product21",
                     name: "ANSI B16.28 Reducing Elbow",
                     shortDescription: "High-quality reducing elbows conforming to ANSI B16.28 standard, designed for connecting pipes of different sizes with reliable performance in diverse industrial applications.",
@@ -1383,7 +1354,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product22: {
+                22: {
                     id: "product22",
                     name: "ANSI B16.28 Stainless Steel Cross Tee",
                     shortDescription: "Premium ANSI B16.28 stainless steel cross tees manufactured with precision to provide durable, corrosion-resistant, and turbulence-free piping junction solutions.",
@@ -1453,7 +1424,7 @@
                         "Custom packaging options available"
                     ]
                 },
-                product23: {
+                23: {
                     id: "product23",
                     name: "ANSI B16.28 Swage Nipple",
                     shortDescription: "Durable and precision-engineered ANSI B16.28 swage nipples available in concentric and eccentric forms, made with ASTM A403 stainless steel and other premium materials for high-performance piping systems.",
@@ -1526,7 +1497,7 @@
                     ]
                 },
                 //COMPRESSION TUBE FITTINGS
-                product24: {
+                24: {
                     id: "product24",
                     name: "Stainless Steel Insulation Gasket Kits",
                     shortDescription: "Comprehensive insulation gasket kits designed to provide leak-proof, corrosion-free flange connections and prevent electrolytic or cathodic corrosion in piping systems.",
@@ -1593,7 +1564,7 @@
                         "Custom Packaging on Demand"
                     ]
                 },
-                product25: {
+                25: {
                     id: "product25",
                     name: "Parker 8-6 HBZ-SS Reducing Union",
                     shortDescription: "High precision, single ferrule stainless steel reducing unions by Parker featuring robust construction, corrosion resistance, and leak-free performance for instrumentation tubing.",
@@ -1643,7 +1614,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product26: {
+                26: {
                     id: "product26",
                     name: "Forged Stainless Steel Tube Union Elbow",
                     shortDescription: "Robust forged and stainless steel tube union elbows manufactured for reliable piping connections, featuring corrosion resistance, dimensional accuracy, and versatile applications across industries.",
@@ -1696,7 +1667,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product27: {
+                27: {
                     id: "product27",
                     name: "Corten Steel Panels",
                     shortDescription: "Durable, weathering steel panels made with high-performance alloys including copper, nickel, chromium, phosphorus, and manganese. Engineered for exceptional corrosion resistance, strength, and aesthetic patina formation.",
@@ -1759,7 +1730,7 @@
                     ]
                 },
                 //Forged Fittings
-                product28: {
+                28: {
                     id: "product28",
                     name: "Forged Cross Pipe Fittings",
                     shortDescription: "High-quality forged cross fittings manufactured to ASTM and ASME standards, designed for durable service in piping systems across diverse industries.",
@@ -1813,7 +1784,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product29: {
+                29: {
                     id: "product29",
                     name: "ANSI B16.9 Forged Concentric Reducer",
                     shortDescription: "High-quality forged concentric reducers compliant with ASTM and ASME standards, designed for smooth pipe size transitions with superior strength, corrosion resistance, and durability.",
@@ -1875,7 +1846,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product30: {
+                30: {
                     id: "product30",
                     name: "Forged Cross Pipe Fittings",
                     shortDescription: "Durable forged cross pipe fittings manufactured to ASTM and ASME standards, designed for high-pressure applications with excellent corrosion resistance and dimensional accuracy.",
@@ -1939,7 +1910,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product31: {
+                31: {
                     id: "product31",
                     name: "ANSI B16.9 Forged Welding Outlets",
                     shortDescription: "High quality forged welding outlets manufactured per ANSI B16.9 standards, designed as branch connection fittings providing a reliable 90° outlet with beveled ends for secure welding.",
@@ -1993,7 +1964,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product32: {
+                32: {
                     id: "product32",
                     name: "ASTM A182 Nipple Outlets",
                     shortDescription: "High-quality forged nipple outlets manufactured to ASTM A182 and ASME standards, providing reliable branch connection points with threaded or plain ends for various industrial applications.",
@@ -2045,7 +2016,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product33: {
+                33: {
                     id: "product33",
                     name: "ASTM A182 Nipple Outlets",
                     shortDescription: "Precision forged ASTM A182 nipple outlets suitable for high-performance piping systems, made from stainless steel, alloy steel, carbon steel, and duplex grades ensuring corrosion resistance and durability.",
@@ -2097,7 +2068,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product34: {
+                34: {
                     id: "product34",
                     name: "ASTM A182 Flange Outlets",
                     shortDescription: "Premium ASTM A182 flange outlets manufactured with superior corrosion resistance and mechanical strength for high-pressure and high-temperature industrial piping applications.",
@@ -2152,7 +2123,7 @@
                         "Manufacturer marking on packaging for authenticity"
                     ]
                 },
-                product35: {
+                35: {
                     id: "product35",
                     name: "Stainless Steel Threaded Outlets",
                     shortDescription: "High-quality ASTM A182 threaded outlets manufactured for seamless pipe branch connections without welding, featuring corrosion resistance, durability, and precision threading.",
@@ -2204,7 +2175,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product36: {
+                36: {
                     id: "product36",
                     name: "Elbow Outlet Pipe Fittings",
                     shortDescription: "Precision forged ASTM A182 elbow outlets designed for reliable branch connections in piping systems, featuring high corrosion resistance, dimensional accuracy, and robustness for demanding industrial environments.",
@@ -2261,7 +2232,7 @@
                         "Secure cramming to avoid damage and rust"
                     ]
                 },
-                product37: {
+                37: {
                     id: "product37",
                     name: "ASTM A234 WP11 Pipe Reducing Tee",
                     shortDescription: "Durable ASTM A234 WP11 pipe reducing tees manufactured to ASME B16.9 standards, designed for smooth flow transitions with excellent corrosion resistance and high mechanical strength.",
@@ -2314,7 +2285,7 @@
                     ]
                 },
                 //Fasteners
-                product38: {
+                38: {
                     id: "product38",
                     name: "ASTM A325 Hex Bolts",
                     shortDescription: "High strength ASTM A325 hex bolts with six-sided heads, designed for structural applications and manufactured in a variety of grades, materials, and corrosion-resistant finishes.",
@@ -2367,7 +2338,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product39: {
+                39: {
                     id: "product39",
                     name: "ASTM A325 Heavy Hex Nuts",
                     shortDescription: "High strength ASTM A325 heavy hex nuts manufactured to ASME B18.2.6 dimensions, designed for structural bolting with enhanced thickness, larger head, and compatibility with heavy hex bolts.",
@@ -2417,7 +2388,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product40: {
+                40: {
                     id: "product40",
                     name: "ASTM A193 B7 Stud Bolts",
                     shortDescription: "High-strength ASTM A193 B7 alloy steel stud bolts, fully threaded with nuts on both ends, heat-treated for mechanical integrity in high-temperature and high-pressure industrial applications.",
@@ -2468,7 +2439,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product41: {
+                41: {
                     id: "product41",
                     name: "ASTM A325 Washers",
                     shortDescription: "Precision-engineered ASTM A325 washers, including flat, lock, spring, square, and fender types, designed to distribute loads, prevent loosening, and protect surfaces in structural assemblies and fastener applications.",
@@ -2516,7 +2487,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product42: {
+                42: {
                     id: "product42",
                     name: "Stainless Steel Anchor & Foundation Bolts",
                     shortDescription: "High-strength anchor and foundation bolts manufactured to ASTM, DIN, and ISO standards, designed to securely affix structures to concrete or masonry in demanding industrial environments.",
@@ -2566,7 +2537,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product43: {
+                43: {
                     id: "product43",
                     name: "ASTM A325 Eye Bolts",
                     shortDescription: "Industrial grade ASTM A325 eye bolts manufactured with precision for lifting, securing, and rigging applications, made from stainless steel, alloy, carbon steel, and nickel alloys for superior strength and corrosion resistance.",
@@ -2618,7 +2589,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product44: {
+                44: {
                     id: "product44",
                     name: "ASTM A325 Fasteners",
                     shortDescription: "High-strength ASTM A325 fasteners designed for structural applications, manufactured to meet international standards with excellent mechanical properties, corrosion resistance, and durability.",
@@ -2666,7 +2637,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product45: {
+                45: {
                     id: "product45",
                     name: "ASTM A325 U Bolts",
                     shortDescription: "High-quality ASTM A325 U Bolts manufactured for structural fastening and support applications, available in stainless steel, carbon steel, alloy steel, and nickel alloys, designed for durability and corrosion resistance.",
@@ -2713,7 +2684,7 @@
                     ]
                 },
                 //REFRACTORY ANCHORS
-                product46: {
+                46: {
                     id: "product46",
                     name: "V Shaped Refractory Anchors",
                     shortDescription: "Durable V-shaped refractory anchors made from stainless steel, high nickel alloys like Inconel and Incoloy, designed to support refractory linings in high-temperature industrial furnaces and chemical plants.",
@@ -2760,7 +2731,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product47: {
+                47: {
                     id: "product47",
                     name: "Stainless Steel Y Type Refractory Anchors",
                     shortDescription: "Robust Y-shaped refractory anchors made from stainless steel grades including 304, 304L, 316, 316L, 310, 321, 347, designed for high temperature and high pressure industrial applications, retaining castable and brick linings.",
@@ -2813,7 +2784,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product48: {
+                48: {
                     id: "product48",
                     name: "U Type Refractory Anchors",
                     shortDescription: "Durable U-shaped refractory anchors manufactured from stainless steel and high nickel alloys like Incoloy 800, 800H, 800HT, Inconel 600, and Monel 400, designed for supporting refractory linings in industrial furnaces and chemical reactors.",
@@ -2860,7 +2831,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product49: {
+                49: {
                     id: "product49",
                     name: "Customized Stainless Steel Refractory Anchors",
                     shortDescription: "Customized refractory anchors made from high-grade stainless steel such as 304, 304L, 316, 316L, 321, suitable for supporting various refractory linings in high-temperature industrial applications including chemical and power plants.",
@@ -2908,7 +2879,7 @@
                     ]
                 },
                 // FORGING PRODUCTS
-                product50: {
+                50: {
                     id: "product50",
                     name: "Carbon Steel Forged Rings ASTM A105",
                     shortDescription: "Robust carbon steel forged rings manufactured from ASTM A105 grade steel, offering high tensile strength, corrosion resistance, and suitability for industrial furnaces, thermal processing, and steel production centers.",
@@ -2960,7 +2931,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product51: {
+                51: {
                     id: "product51",
                     name: "ASTM A105 Carbon Steel Rotor Shafts",
                     shortDescription: "Heavy-duty rotor shafts manufactured from ASTM A105 carbon steel, stainless steel grades (304, 304L, 316, 316L, 321, 347, 904L), and alloy steel grades F22, EN8, designed for power generation, chemical, and industrial applications.",
@@ -3007,7 +2978,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product52: {
+                52: {
                     id: "product52",
                     name: "Stainless Steel and Carbon Steel Propeller Shafts & Forged Round Bars",
                     shortDescription: "Premium stainless steel and carbon steel propeller shafts and forged round bars manufactured to precise dimensions, offering high corrosion resistance, mechanical strength, and versatility for marine, industrial and structural applications.",
@@ -3055,7 +3026,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product53: {
+                53: {
                     id: "product53",
                     name: "Customized Stainless Steel and Carbon Steel Forgings",
                     shortDescription: "Precision-engineered custom forgings manufactured from stainless steel (304, 304L, 316, 316L, 321, 347, 904L) and carbon steel (A105, A350, EN8, EN9) for diverse industrial applications including automotive, oil & gas, and chemical processing.",
@@ -3102,7 +3073,7 @@
                     ]
                 },
                 //GASKETS
-                product54: {
+                54: {
                     id: "product54",
                     name: "Stainless Steel Insulation Gasket Kits",
                     shortDescription: "Complete insulation gasket kits made from high-grade stainless steel such as SS 304, 304L, 316, 316L, 321, 347, and 904L, designed to electrically isolate flanged connections and prevent galvanic corrosion in piping systems.",
@@ -3149,7 +3120,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product55: {
+                55: {
                     id: "product55",
                     name: "Spiral Wound Gaskets",
                     shortDescription: "Durable spiral wound gaskets constructed by spirally winding metallic strips with soft fillers, available in stainless steel and high nickel alloys, suitable for fluctuating pressures and temperatures in industrial piping and refinery applications.",
@@ -3197,7 +3168,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product56: {
+                56: {
                     id: "product56",
                     name: "Alloy 20 and Stainless Steel Ring Type Joint Gaskets",
                     shortDescription: "Precision-engineered alloy 20 and stainless steel ring type joint (RTJ) gaskets designed for high temperature and high pressure applications, widely used in oilfields, petrochemical, and refinery industries for leak-proof flanged connections.",
@@ -3243,7 +3214,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product57: {
+                57: {
                     id: "product57",
                     name: "SS 316 and High Nickel Octagonal Ring Type Joint Gaskets",
                     shortDescription: "High-performance octagonal ring type joint gaskets manufactured from stainless steel (316, 316L, 321, 347, 904L) and high-grade nickel alloys (Monel 400, K500, Inconel 600, 625), designed for robust sealing in high-pressure, high-temperature industrial applications.",
@@ -3291,7 +3262,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product58: {
+                58: {
                     id: "product58",
                     name: "Stainless Steel Graphite Filler Gaskets",
                     shortDescription: "High-quality graphite filler gaskets featuring stainless steel facings, designed for superior sealing in high-temperature and high-pressure applications, widely used in petrochemical, pharmaceutical, and power industries.",
@@ -3340,11 +3311,11 @@
                     ]
                 },
                 // DESIGNER SHEETS
-                product59: {
+                59: {
                     id: "product59",
                     name: "Stainless Steel Designer Sheets",
                     shortDescription: "Premium stainless steel designer sheets with diverse finishes including gold mirror, gold hairline, etching, and black hairline, manufactured from grade 304 stainless steel and available in custom sizes and thicknesses.",
-                    image: "./images/DESIGNER SHEETS/Rose Gold Mirror Sheet.jpg",
+                    image: "./images/DESIGNER SHEETS/SS Designer Sheets.png",
                     gallery: [
                         "./images/DESIGNER SHEETS/Gold Hariline Sheets.jpg",
                         "./images/DESIGNER SHEETS/Rose Gold Mirror Sheet.jpg",
@@ -3389,7 +3360,7 @@
                     ]
                 },
                 //OTHER
-                product60: {
+                60: {
                     id: "product60",
                     name: "Corten Steel Panels",
                     shortDescription: "Durable Corten steel panels made from weathering steel alloys containing copper, nickel, chromium, phosphorus, and manganese, noted for outstanding corrosion resistance, strength, and natural protective rust patina formation.",
@@ -3436,7 +3407,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product61: {
+                61: {
                     id: "product61",
                     name: "Stainless Steel T, U & C Profiles",
                     shortDescription: "High-quality stainless steel profiles in T, U, and C shapes including Grade 304 with PVD titanium coating, gold and black mirror finishes, ideal for architectural, construction, and decorative applications.",
@@ -3482,7 +3453,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product62: {
+                62: {
                     id: "product62",
                     name: "Stainless Steel PVD Coated Color Profiles",
                     shortDescription: "High-end stainless steel profiles coated using Physical Vapor Deposition (PVD) titanium ion plating to provide superior wear, scratch, and corrosion resistance, available in multiple colors and finishes for architectural and decorative applications.",
@@ -3528,7 +3499,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product63: {
+                63: {
                     id: "product63",
                     name: "Stainless Steel Omega Profiles",
                     shortDescription: "High-quality stainless steel omega profiles manufactured from SS 304, 316, and aluminum, available in various sizes, thicknesses, and decorative finishes including mirror, hairline, gold, and rose gold coatings, used in architectural and structural applications.",
@@ -3574,7 +3545,7 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
-                product64: {
+                64: {
                     id: "product64",
                     name: "Corten Steel Planters",
                     shortDescription: "Durable and weather-resistant Corten steel planters made from weathering steel alloys containing copper, nickel, chromium, phosphorus, and manganese, naturally forming a protective rust layer that ensures long life and low maintenance.",

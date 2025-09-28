@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAINAM FERRO ALLOYS</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./productsFilter.css" />
+</head>
+
+<body>
+  <!-- Animated Header -->
+  <div class="animated-header">
+    <div class="animated-line"></div>
+  </div>
+
+  <!-- Social Header -->
+  <div class="social-header">
+    <div class="container">
+      <div class="d-flex justify-content-end">
+        <div class="social-links">
+          <span>Follow us on</span>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg main-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- <div class="brand-logo">SM</div> -->
+        <img src="./images/OnlyLogo.jpeg" alt="JSA" class="brand-logo logo-img" />
+        <div class="brand-text">
+          <h2>JAINAM FERRO ALLOYS</h2>
+          <p>An ISO 9001:2015 Certified Company</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="./index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#about">Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#services">Quality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./productsFilter.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./certificate.html">Certificate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="products" class="section">
+    <div class="container">
+      <h2 class="section-title">Products</h2>
+      <p class="section-subtitle">Discover our comprehensive range of high-quality flanges and steel products</p>
+  
+      <div class="controls">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search products...">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Products</button>
+          <button class="filter-btn" data-filter="flanges">Flanges</button>
+          <button class="filter-btn" data-filter="Buttweld Fittings">Buttweld Fittings</button>
+          <button class="filter-btn" data-filter="COMPRESSION TUBE FITTINGS">Compression Tube Fitting</button>
+          <button class="filter-btn" data-filter="Forged Fittings">Forged Fittings</button>
+          <button class="filter-btn" data-filter="Fasteners">Fasteners</button>
+          <button class="filter-btn" data-filter="REFRACTORY ANCHORS">Refractory Anchors</button>
+          <button class="filter-btn" data-filter="FORGING PRODUCTS">Forging Products</button>
+          <button class="filter-btn" data-filter="GASKETS">Gaskets</button>
+          <button class="filter-btn" data-filter="DESIGNER SHEETS">Designer Sheets</button>
+          <button class="filter-btn" data-filter="OTHER">Other</button>
+        </div>
+      </div>
+  
+      <div class="prodcutRow" id="productsGrid">
+        <!-- Products will be loaded here -->
+      </div>
+  
+      <div class="loading" id="loading">
+        <i class="fas fa-spinner"></i>
+        Loading products...
+      </div>
+  
+      <div class="no-results" id="noResults" style="display: none;">
+        <i class="fas fa-search"></i>
+        No products found matching your search criteria
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="navbar-brand mb-3">
+            <!-- <div class="brand-logo"> -->
+            <img src="./images/OnlyLogo.jpeg" alt="JAINAM FERRO ALLOYS Logo" class="brand-logo logo-img" />
+            <!-- </div> -->
+            <div class="brand-text">
+              <h2 style="
+                    color: var(--secondary-color);
+                    font-size: var(--font-size-xl);
+                  ">
+                JAINAM FERRO ALLOYS
+              </h2>
+              <p style="color: rgba(255, 255, 255, 0.8)">
+                An ISO 9001:2015 Certified Company
+              </p>
+            </div>
+          </div>
+          <p style="color: rgba(255, 255, 255, 0.8)">
+            Leading manufacturer of high-quality stainless steel, carbon
+            steel, and alloy steel products. Your trusted partner for
+            precision engineering solutions.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Quality</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="./certificate.html">Certificate</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Products</h5>
+          <ul class="footer-links">
+            <li><a href="#">Stainless Steel Tubes</a></li>
+            <li><a href="#">Carbon Steel Pipes</a></li>
+            <li><a href="#">Alloy Steel Products</a></li>
+            <li><a href="#">Cold Drawn Pipes</a></li>
+            <li><a href="#">Custom Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h5>Contact Info</h5>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Industrial Area, Steel City</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 1234567890</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@sailcometal.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 JAINAM FERRO ALLOYS . All rights reserved. | Designed
+          with ❤️ for excellence in steel manufacturing.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-wrapper" id="whatsappWrapper">
+  <a href="https://wa.me/+919950402175?text=Hi Vikas!" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+  <span class="whatsapp-close" id="whatsappClose">&times;</span>
+</div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="./productsFilter.js"></script>
+</body>
+
+</html>
