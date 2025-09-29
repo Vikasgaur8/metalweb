@@ -184,7 +184,26 @@ body {
     var(--primary-color),
     var(--secondary-color)
   );
-  border-radius: var(--border-radius-md);
+  /* border-radius: var(--border-radius-md); */
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+}
+
+.trademark-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  /* border-radius: var(--border-radius-md); */
+  border-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -569,7 +588,7 @@ body {
 .contact-item i {
   width: 40px;
   height: 40px;
-  background: var(--secondary-color);
+  /* background: var(--secondary-color); */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -736,6 +755,11 @@ body {
 
   .service-card {
     padding: var(--spacing-lg);
+  }
+
+  .trademark-icon{
+    height: 30px;
+    width: 30px;
   }
 }
 
@@ -1322,7 +1346,7 @@ body {
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .whatsapp-float img {
-    width: 140px;
+    width: 145px;
   }
   .whatsapp-wrapper {
   bottom: 30px;
