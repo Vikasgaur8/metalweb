@@ -1301,7 +1301,7 @@ body {
 }
 
 .whatsapp-float img {
-  width: 150px;
+  width: 160px;
 }
 
 .whatsapp-float:hover {
@@ -1322,7 +1322,7 @@ body {
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .whatsapp-float img {
-    width: 120px;
+    width: 140px;
   }
   .whatsapp-wrapper {
   bottom: 30px;
