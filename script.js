@@ -1288,7 +1288,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Close WhatsApp button when user clicks X
-document.getElementById('whatsappClose').addEventListener('click', function() {
-  console.log("000--->>")
-  document.getElementById('whatsappWrapper').style.display = 'none';
-});
+// document.getElementById('whatsappClose').addEventListener('click', function() {
+//   console.log("000--->>")
+//   document.getElementById('whatsappWrapper').style.display = 'none';
+// });
