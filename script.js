@@ -673,7 +673,7 @@ function createMultiImageLightbox(imagesData) {
       transform: translateY(-50%);
       background: rgba(255, 255, 255, 0.2);
       border: none;
-      color: white;
+      color: black;
       font-size: 48px;
       cursor: pointer;
       z-index: 10001;
