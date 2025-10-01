@@ -1357,3 +1357,7 @@ body {
     margin-top: -40px;
   } */
 }
+
+iframe{
+  border-radius: 20px;
+}
