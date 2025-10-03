@@ -281,7 +281,7 @@ body {
   position: relative;
   z-index: 2;
   max-width: 800px; /* ADD this line */
-  padding: 0px 28px 0px 60px; /* ADD this line */
+  padding: 0px 28px 0px 65px; /* ADD this line */
   
 }
 .hero-title {
