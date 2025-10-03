@@ -982,7 +982,8 @@ function slide(wrapper, items, prev, next) {
     posFinal,
     slides = items.getElementsByClassName("slide"),
     slidesLength = slides.length,
-    slideSize = window.innerWidth,
+    // slideSize = window.innerWidth,
+    slideSize = items.parentElement.offsetWidth,
     firstSlide = slides[0],
     lastSlide = slides[slidesLength - 1],
     cloneFirst = firstSlide.cloneNode(true),
@@ -990,14 +991,21 @@ function slide(wrapper, items, prev, next) {
     index = 0,
     allowShift = true,
     autoSlideInterval,
-    threshold = slideSize / 4; // dynamic threshold
+    threshold = 100;
+    // threshold = slideSize / 4; // dynamic threshold
+
+     Array.from(slides).forEach((slide) => {
+       slide.style.minWidth = "100%";
+       slide.style.maxWidth = "100%";
+       slide.style.flexShrink = "0";
+     });
 
   // Clone first and last slide
   items.appendChild(cloneFirst);
   items.insertBefore(cloneLast, firstSlide);
 
   // Set initial position
-  items.style.left = -slideSize + "px";
+   items.style.left = -items.parentElement.offsetWidth + "px";
   wrapper.classList.add("loaded");
 
   // Mouse events
@@ -1025,11 +1033,15 @@ function slide(wrapper, items, prev, next) {
   startAutoSlide();
 
   // Recalculate on resize
-  window.addEventListener("resize", () => {
-    slideSize = window.innerWidth;
-    threshold = slideSize / 4;
-    items.style.left = -((index + 1) * slideSize) + "px";
-  });
+ window.addEventListener("resize", () => {
+   slideSize = items.parentElement.offsetWidth; // CHANGE यह
+   threshold = 100; // Keep fixed
+   items.style.transition = "none"; // ADD यह
+   items.style.left = -((index + 1) * slideSize) + "px";
+   setTimeout(() => {
+     items.style.transition = ""; // ADD यह
+   }, 50);
+ });
 
   function dragStart(e) {
     e = e || window.event;
@@ -1189,9 +1201,9 @@ track.addEventListener("transitionend", () => {
 
 // Update slide width and position on resize
 window.addEventListener("resize", () => {
-  slideWidth = indSlides[0].offsetWidth + 16;
-  setPosition(currentPos);
-  track.style.transition = "none";
+  slideWidth = window.innerWidth; /* CHANGE this line */
+  threshold = slideWidth / 4;
+  items.style.left = -((index + 1) * slideWidth) + "px";
 });
 
 // Auto slide every 1800ms (adjust as needed)
