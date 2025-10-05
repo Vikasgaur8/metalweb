@@ -1034,12 +1034,12 @@ function slide(wrapper, items, prev, next) {
 
   // Recalculate on resize
  window.addEventListener("resize", () => {
-   slideSize = items.parentElement.offsetWidth; // CHANGE यह
+   slideSize = items.parentElement.offsetWidth; // CHANGE 
    threshold = 100; // Keep fixed
-   items.style.transition = "none"; // ADD यह
+   items.style.transition = "none"; // ADD
    items.style.left = -((index + 1) * slideSize) + "px";
    setTimeout(() => {
-     items.style.transition = ""; // ADD यह
+     items.style.transition = ""; // ADD
    }, 50);
  });
 
