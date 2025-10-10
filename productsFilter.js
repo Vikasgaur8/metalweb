@@ -549,7 +549,7 @@ const productsFilter= [
 
 
 let filteredProducts = [...productsFilter];
-let currentFilter = "all";
+let currentFilter = "flanges";
 
 // DOM Elements
 const productsGrid = document.getElementById("productsGrid");
@@ -564,11 +564,26 @@ const visibleProductsSpan = document.getElementById("visibleProducts");
 function init() {
   setTimeout(() => {
     loading.style.display = "none";
-    renderProducts();
+
+    const productId = getProductIdFromURL();
+
+    if (productId) {
+      // Apply filter from URL if available
+      currentFilter = productId.toLowerCase();
+      handleFilter(currentFilter, false); // false = don't trigger event.target issue
+    } else {
+      // Default view
+      renderProducts();
+    }
+
     animateStats();
   }, 1000);
 }
 
+function getProductIdFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get("filter");
+}
 // Render productsFilter
 function renderProducts() {
   productsGrid.innerHTML = "";
@@ -639,7 +654,7 @@ function handleSearch() {
   filteredProducts = productsFilter.filter((product) => {
     const matchesSearch =
       product.name.toLowerCase().includes(searchTerm) ||
-      product.description.toLowerCase().includes(searchTerm) ||
+      // product.description.toLowerCase().includes(searchTerm) ||
       product.category.toLowerCase().includes(searchTerm);
 
     const matchesFilter =
@@ -653,14 +668,46 @@ function handleSearch() {
 }
 
 // Filter functionality
-function handleFilter(filter) {
-  currentFilter = filter;
+function handleFilter(filter, fromClick = true) {
+  console.log("handleFilter==>", filter);
+  currentFilter = filter.toLowerCase();
 
-  // Update active button
-  filterButtons.forEach((btn) => btn.classList.remove("active"));
-  event.target.classList.add("active");
+  // Update active button only if it came from a click
+  if (fromClick) {
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    const clickedBtn = [...filterButtons].find(
+      (btn) => btn.dataset.filter.toLowerCase() === currentFilter
+    );
+    if (clickedBtn) clickedBtn.classList.add("active");
+  }
 
-  handleSearch(); // This will apply both search and filter
+  // Highlight active button
+  filterButtons.forEach((btn) => {
+    const btnFilter = btn.dataset.filter.toLowerCase();
+    if (btnFilter === currentFilter) {
+      btn.classList.add("active");
+    } else if (currentFilter === "all" && btnFilter === "all") {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  // Update URL without reloading (if clicked manually)
+  if (fromClick) {
+    const newUrl = new URL(window.location);
+    newUrl.searchParams.set("filter", currentFilter);
+    window.history.pushState({}, "", newUrl);
+  }
+
+  // Filter data
+  filteredProducts = productsFilter.filter((product) =>
+    currentFilter === "all"
+      ? true
+      : product.category.toLowerCase().includes(currentFilter)
+  );
+
+  renderProducts();
 }
 
 // Animate statistics
@@ -694,9 +741,16 @@ searchInput.addEventListener("keypress", (e) => {
   }
 });
 
+// filterButtons.forEach((btn) => {
+//   btn.addEventListener("click", (e) => {
+//     handleFilter(e.target.dataset.filter);
+//   });
+// });
+
 filterButtons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    handleFilter(e.target.dataset.filter);
+    const selectedFilter = e.target.dataset.filter;
+    handleFilter(selectedFilter, true);
   });
 });
 

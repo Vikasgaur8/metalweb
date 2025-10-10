@@ -1620,45 +1620,45 @@ const products = [
       "High-quality slip-on flanges for various industrial applications",
   },
   {
-    id: 2,
-    name: "WELD NECK FLANGES",
-    image: "./images/flangs/WELD NECK FLANGES/Alloy Steel WNRF Flanges.webp",
-    alt: "Carbon Steel Pipes",
-    category: "flanges",
-    description: "Durable weld neck flanges for secure, leak-proof connections",
-  },
-  {
-    id: 3,
-    name: "LONG_WELD",
-    image: "./images/flangs/LONG_WELD/Alloy Steel Long Weld Neck Flanges.jpg",
-    alt: "Alloy Steel Products",
-    category: "flanges",
-    description: "Extended weld neck flanges for high-strength pipeline joints",
-  },
-  {
-    id: 4,
-    name: "AWWA_FLANGES",
-    image: "./images/flangs/AWWA_FLANGES/Awwa Flanges.jpg",
-    alt: "Cold Drawn Precision Tubes",
-    category: "flanges",
-    description: "AWWA standard flanges designed for potable water systems",
-  },
-  {
-    id: 5,
-    name: "Body Flanges",
-    image: "./images/flangs/Body Flanges/Body Flanges.jpg",
-    alt: "Industrial Steel Pipes",
-    category: "flanges",
-    description: "Specialized body flanges for industrial piping applications",
-  },
-  {
-    id: 6,
-    name: "BLIND FLANGES",
-    image: "./images/flangs/BLIND FLANGES/BLIND FLANGES.jpg",
+    id: 59,
+    name: "Stainless Steel Designer Sheets",
+    image: "./images/DESIGNER SHEETS/SS Designer Sheets.png",
     alt: "Custom Steel Solutions",
-    category: "flanges",
-    description: "Blind flanges for sealing and capping pipeline ends",
-  }
+    category: "DESIGNER SHEETS",
+    description: "Designer stainless steel sheets for aesthetic applications",
+  },
+  {
+    id: 14,
+    name: "Pipe Tees",
+    image: "./images/Buttweld Fittings/Tee/SS Cross Tee.jpg",
+    alt: "Custom Steel Solutions",
+    category: "Buttweld Fittings",
+    description: "Durable pipe tees for smooth branch connections",
+  },
+  {
+    id: 39,
+    name: "ASTM A325 Heavy Hex Nuts",
+    image: "./images/Fasteners/HEAVY HEX NUTS/Steel Heavy Hex Nuts.jpg",
+    alt: "Custom Steel Solutions",
+    category: "Fasteners",
+    description: "Heavy hex nuts designed for structural security",
+  },
+  {
+    id: 28,
+    name: "Forged Cross Pipe Fittings",
+    image: "./images/Forged Fittings/FORGED TEE/Socketweld Forged Tee.jpg",
+    alt: "Custom Steel Solutions",
+    category: "Forged Fittings",
+    description: "Forged cross fittings meeting ASME and MSS standards",
+  },
+  {
+    id: 38,
+    name: "ASTM A325 Hex Bolts",
+    image: "./images/Fasteners/Hex Bolts/Hex Bolt.jpg",
+    alt: "Custom Steel Solutions",
+    category: "Fasteners",
+    description: "High-strength hex bolts for industrial fastening needs",
+  },
 ];
 
 // Dynamically render gallery
@@ -1668,7 +1668,7 @@ products.forEach(product => {
   col.className = 'col-lg-4 col-md-6';
   col.innerHTML = `
     <div class="gallery-item scroll-animate">
-      <a href="product-details.html?product=${product.id}" target="_self">
+      <a href="productsFilter.html?filter=${product.category}" target="_self">
         <img src="${product.image}" alt="${product.alt}" />
         <div class="gallery-overlay text-white">${product.name}</div>
       </a>
