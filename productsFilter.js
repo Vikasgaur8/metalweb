@@ -1,4 +1,4 @@
-const productsFilter= [
+const productsFilter = [
   {
     id: 1,
     name: "SLIP ON FLANGES",
@@ -64,14 +64,14 @@ const productsFilter= [
     category: "flanges",
     description: "DIN standard flanges for European piping applications",
   },
-  {
-    id: 9,
-    name: "PADDLE BLANK FLANGES",
-    image: "./images/flangs/PADDLE BLANK FLANGES/Hydrotest Flanges.jpg",
-    alt: "Custom Steel Solutions",
-    category: "flanges",
-    description: "Paddle blank flanges for testing and isolation in pipelines",
-  },
+  // {
+  //   id: 9,
+  //   name: "PADDLE BLANK FLANGES",
+  //   image: "./images/flangs/PADDLE BLANK FLANGES/Hydrotest Flanges.jpg",
+  //   alt: "Custom Steel Solutions",
+  //   category: "flanges",
+  //   description: "Paddle blank flanges for testing and isolation in pipelines",
+  // },
   {
     id: 10,
     name: "PADDLE SPACER FLANGES",
@@ -117,22 +117,22 @@ const productsFilter= [
   },
   {
     id: 15,
-    name: "Pipe Reducers",
+    name: "Cross Reducers",
     image:
       "./images/Buttweld Fittings/CONCENTRIC REDUCER/Duplex Steel Concentric Reducer.jpg",
     alt: "Custom Steel Solutions",
     category: "Buttweld Fittings",
     description: "Reducers available in concentric and eccentric designs",
   },
-  {
-    id: 16,
-    name: "Stainless Steel Tube",
-    image:
-      "./images/Buttweld Fittings/ECCENTRIC REDUCER/Duplex Steel Concentric Reducer.jpg",
-    alt: "Custom Steel Solutions",
-    category: "Buttweld Fittings",
-    description: "High-grade stainless steel tubes for industrial use",
-  },
+  // {
+  //   id: 16,
+  //   name: "Stainless Steel Tube",
+  //   image:
+  //     "./images/Buttweld Fittings/ECCENTRIC REDUCER/Duplex Steel Concentric Reducer.jpg",
+  //   alt: "Custom Steel Solutions",
+  //   category: "Buttweld Fittings",
+  //   description: "High-grade stainless steel tubes for industrial use",
+  // },
   {
     id: 17,
     name: "ASME / ANSI B16.9 Barred Tee",
@@ -159,21 +159,21 @@ const productsFilter= [
   },
   {
     id: 20,
-    name: "ANSI B16.28 Stainless Steel Elbow",
+    name: "STUBEND",
     image: "./images/Buttweld Fittings/ELBOW/Carbon Steel 45° Elbow.jpg",
     alt: "Custom Steel Solutions",
     category: "Buttweld Fittings",
     description: "Elbows with optimized flow dynamics to reduce turbulence",
   },
-  {
-    id: 21,
-    name: "ANSI B16.28 Reducing Elbow",
-    image:
-      "./images/Buttweld Fittings/Reducing Elbow/Carbon Steel 45° Reducing Elbow.jpg",
-    alt: "Custom Steel Solutions",
-    category: "Buttweld Fittings",
-    description: "Reducing elbows with various thickness options and standards",
-  },
+  // {
+  //   id: 21,
+  //   name: "ANSI B16.28 Reducing Elbow",
+  //   image:
+  //     "./images/Buttweld Fittings/Reducing Elbow/Carbon Steel 45° Reducing Elbow.jpg",
+  //   alt: "Custom Steel Solutions",
+  //   category: "Buttweld Fittings",
+  //   description: "Reducing elbows with various thickness options and standards",
+  // },
   {
     id: 22,
     name: "ANSI B16.28 Stainless Steel Cross Tee",
@@ -191,6 +191,15 @@ const productsFilter= [
     description:
       "Swage nipples meeting multiple ANSI and JIS dimension standards",
   },
+  {
+    id: 29,
+    name: "ANSI B16.9 Forged Concentric Reducer",
+    image:
+      "./images/Forged Fittings/FORGED REDUCER/Forged Concentric Reducer.jpg",
+    alt: "Custom Steel Solutions",
+    category: "Buttweld Fittings",
+    description: "Concentric reducers compliant with ASME and ASTM standards",
+  },
   // COMPRESSION TUBE FITTINGS
   {
     id: 24,
@@ -198,7 +207,8 @@ const productsFilter= [
     image:
       "./images/COMPRESSION TUBE FITTINGS/MALE CONNECTOR/Male Connector.jpg",
     alt: "Custom Steel Solutions",
-    category: "COMPRESSION TUBE FITTINGS",
+    // category: "COMPRESSION TUBE FITTINGS",
+    category: "Connectors",
     description:
       "Insulation gasket kits made from various stainless steel grades",
   },
@@ -207,7 +217,7 @@ const productsFilter= [
     name: "Parker 8-6 HBZ-SS Reducing Union",
     image: "./images/COMPRESSION TUBE FITTINGS/TUBE TO UNION/Tube To Union.jpg",
     alt: "Custom Steel Solutions",
-    category: "COMPRESSION TUBE FITTINGS",
+    category: "Connectors",
     description: "Reducing unions made of stainless steel AISI 316",
   },
   {
@@ -215,7 +225,7 @@ const productsFilter= [
     name: "Forged Stainless Steel Tube Union Elbow",
     image: "./images/COMPRESSION TUBE FITTINGS/UNION ELBOW/SS Union Elbow.jpg",
     alt: "Custom Steel Solutions",
-    category: "COMPRESSION TUBE FITTINGS",
+    category: "Connectors",
     description: "Forged union elbows in multiple stainless alloys and metals",
   },
   {
@@ -223,7 +233,7 @@ const productsFilter= [
     name: "Corten Steel Panels",
     image: "./images/COMPRESSION TUBE FITTINGS/VALVES/CS Check Valves.jpg",
     alt: "Custom Steel Solutions",
-    category: "COMPRESSION TUBE FITTINGS",
+    category: "Connectors",
     description: "Weathering steel panels with protective patina finish",
   },
   // Forged Fittings
@@ -234,15 +244,6 @@ const productsFilter= [
     alt: "Custom Steel Solutions",
     category: "Forged Fittings",
     description: "Forged cross fittings meeting ASME and MSS standards",
-  },
-  {
-    id: 29,
-    name: "ANSI B16.9 Forged Concentric Reducer",
-    image:
-      "./images/Forged Fittings/FORGED REDUCER/Forged Concentric Reducer.jpg",
-    alt: "Custom Steel Solutions",
-    category: "Forged Fittings",
-    description: "Concentric reducers compliant with ASME and ASTM standards",
   },
   {
     id: 30,
@@ -501,6 +502,35 @@ const productsFilter= [
     category: "DESIGNER SHEETS",
     description: "Designer stainless steel sheets for aesthetic applications",
   },
+  //SHEETS, PLATES & COILS
+  {
+    id: 65,
+    name: "Sheets, Plates & Coils",
+    image: "./images/TypesOf/sheets-plates-coil1.jpg",
+    alt: "Custom Steel Solutions",
+    category: "Sheets, Plates & Coils",
+    description:
+      "High-quality sheets, plates, and coils known for superior strength, corrosion resistance, and smooth finish — ideal for industrial and construction applications.",
+  },
+  //ROADS AND BARS
+  {
+    id: 66,
+    name: "Rods and Bars",
+    image: "./images/RODS_BARS/Rods.jpg",
+    alt: "Custom Steel Solutions",
+    category: "Rods and Bars",
+    description:
+      "Precision-engineered rods and bars offering excellent strength, durability, and corrosion resistance for construction and manufacturing applications.",
+  },
+  // //ROADS AND BARS
+  // {
+  //   id: 65,
+  //   name: "Rods and Bars",
+  //   image: "./images/TypesOf/sheets-plates-coil1.jpg",
+  //   alt: "Custom Steel Solutions",
+  //   category: "Rods and Bars",
+  //   description: "Durable weathering steel panels with protective finish",
+  // },
   // OTHER
   {
     id: 60,
