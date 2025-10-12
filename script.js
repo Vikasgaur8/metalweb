@@ -171,6 +171,9 @@ function initContactForm() {
   const contactForm = document.getElementById("contactForm");
 
   if (contactForm) {
+    // Initialize EmailJS (add your Public Key)
+    emailjs.init("tTrhjg4UFCQRH_7p-");
+
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
@@ -184,21 +187,29 @@ function initContactForm() {
 
       // Validate form
       if (validateForm(formValues)) {
-        // Show success message
-        showMessage(
-          "Thank you for your message! We will get back to you soon.",
-          "success"
-        );
-
-        // Reset form
-        this.reset();
-
-        // In a real application, you would send the data to your server
-        // Example: sendFormData(formValues);
+        // Send using EmailJS
+        console.log("from-->>",formValues)
+        emailjs
+          .send("service_2q74q5o", "template_gca1afq", formValues)
+          .then(() => {
+            showMessage(
+              "Message sent successfully! We’ll contact you soon.",
+              "success"
+            );
+            contactForm.reset();
+          })
+          .catch((error) => {
+            console.error("EmailJS Error:", error);
+            showMessage(
+              "Failed to send message. Please try again later.",
+              "error"
+            );
+          });
       }
     });
   }
 }
+
 
 // Form validation function
 function validateForm(data) {
