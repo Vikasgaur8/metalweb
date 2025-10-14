@@ -506,7 +506,7 @@ const productsFilter = [
   {
     id: 65,
     name: "Sheets, Plates & Coils",
-    image: "./images/TypesOf/sheets-plates-coil1.jpg",
+    image: "./images/SP&C/sheet-plate-coil.png",
     alt: "Custom Steel Solutions",
     category: "Sheets, Plates & Coils",
     description:
@@ -522,15 +522,56 @@ const productsFilter = [
     description:
       "Precision-engineered rods and bars offering excellent strength, durability, and corrosion resistance for construction and manufacturing applications.",
   },
-  // //ROADS AND BARS
+  //Non Ferrous Metals
+  {
+    id: 67,
+    name: "Copper Tubes",
+    image: "./images/coper/copper-pipe.jpg",
+    alt: "Non Ferrous Metals",
+    category: "Non Ferrous Metals",
+    description:
+      "High-conductivity copper products known for excellent electrical and thermal performance, ideal for wiring, heat exchangers, and industrial use.",
+  },
+
+  {
+    id: 68,
+    name: "Brass Tubes",
+    image: "./images/Brass/Brass-tubes.jpg",
+    alt: "Non Ferrous Metals",
+    category: "Non Ferrous Metals",
+    description:
+      "Durable and corrosion-resistant brass materials suitable for fittings, valves, and decorative components in marine and industrial environments.",
+  },
+
+  {
+    id: 69,
+    name: "Cupronickel",
+    image: "./images/Cupronickel/Cupronickel-Images.jpg",
+    alt: "Non Ferrous Metals",
+    category: "Non Ferrous Metals",
+    description:
+      "Cupronickel alloys offering superior resistance to seawater corrosion, widely used in shipbuilding, condensers, and desalination plants.",
+  },
+
   // {
-  //   id: 65,
-  //   name: "Rods and Bars",
-  //   image: "./images/TypesOf/sheets-plates-coil1.jpg",
-  //   alt: "Custom Steel Solutions",
-  //   category: "Rods and Bars",
-  //   description: "Durable weathering steel panels with protective finish",
+  //   id: 70,
+  //   name: "Bronze",
+  //   image: "./images/NonFerrous/bronze.jpg",
+  //   alt: "Non Ferrous Metals",
+  //   category: "Non Ferrous Metals",
+  //   description:
+  //     "Strong and wear-resistant bronze alloys including phosphorous and aluminium bronze, designed for bearings, bushings, and mechanical components.",
   // },
+  // {
+  //   id: 71,
+  //   name: "Copper Tubes & Sections",
+  //   image: "./images/NonFerrous/copper_tubes.jpg",
+  //   alt: "Non Ferrous Metals",
+  //   category: "Non Ferrous Metals",
+  //   description:
+  //     "Precision-engineered copper tubes, rods, and profiles with high strength and corrosion resistance for HVAC, electrical, and heat transfer systems.",
+  // },
+
   // OTHER
   {
     id: 60,

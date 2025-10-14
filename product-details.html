@@ -110,7 +110,7 @@
             </div>
 
             <!-- Product Specifications Table -->
-            <div class="row mt-5">
+            <div class="row mt-5" id="product-spec-table-header">
                 <div class="col-lg-12">
                     <h3 class="mb-3">Technical Specifications</h3>
                     <div class="table-responsive">
@@ -3621,34 +3621,41 @@
                         "Africa: Ghana, South Africa"
                     ]
                 },
+
                 65: {
                     id: "product65",
                     name: "Sheets, Plates & Coils",
                     shortDescription: "High-performance metal sheets, plates, and coils used in a range of industries, manufactured with ASTM- and IS-certified grades for superior durability, corrosion resistance, and versatility in shape and size.",
-                    image: "./images/TypesOf/sheets-plates-coil1.jpg",
+                    image: "./images/SP&C/sheet-plate-coil.png",
                     gallery: [
-                        "./images/TypesOf/sheets-plates-coil1.jpg",
+                        "./images/SP&C/sheet-plate-coil.png",
+                        "./images/SP&C/sheets-plates-coil1.jpg",
                         "./images/SP&C/sheets.jpg",
                     ],
                     features: [
-                        "Material: Stainless steel (304, 316, 202, etc.), Alloy steel, Carbon steel, Boiler quality steel.",
-                        "Thickness range: 0.3mm to 50mm available; custom thicknesses also offered.",
-                        "Shapes: Sheet, plate, coil, slit, strip.",
-                        "Surface finishes: CR, HR, 2B, No.4 (matte), No.8 (mirror), BA, brush, embossed, sandblast.",
-                        "Manufactured per ASTM, IS, DIN standards; suitable for construction, energy, marine, chemical process."
+                        "<b>S. S. Sheets & Plates</b>: as per ASTM A240, Grades TP 304, 304L, 304LN, 309, 309S, 309H, 310H, 316, 316L, 316H, 316LN, 316Ti, 317, 317L, 321, 321H, 347, 348, 348H, 409, 410, 420, 430, etc. — corrosion resistant and durable for industrial use.",
+                        "<b>Alloy Steel Plates</b>: as per ASTM A387 Gr. 2, 5, 9, 11, 12 & 22 (Class 1 & 2), ASTM A204 Gr. A & B, DIN 17175 Gr. 15Mo3 & 16Mo3 with IBR Test Certificate — high temperature and pressure resistance.",
+                        "<b>Carbon Steel / Boiler Quality Plates</b>: as per IS 2062 / ASTM A36, Grades A, B & C, IS 2002 Gr. 1 & 2, ASTM A516 Gr. 60 & 70, ASTM A515 Gr. 70 — strong and weldable for heavy-duty construction.",
+                        "<b>Abrasion Resistant / Wear Resistant Plates</b>: Sailhard, Hardox, Sumihard, Jee Raex, Fora, Abrazo, Abrex, Xar, Nicrorud, Dillidur 360, 400, 450, 500, 600, 700, 900 & 100 BHN — wear and impact resistant."
                     ],
-                    specs: [
-                        { parameter: "Material Grades", specification: "304, 304L, 316, 316L, 310, 321, alloy & boiler quality grades" },
-                        { parameter: "Thickness", specification: "0.3mm - 50mm (standard); other thicknesses available" },
-                        { parameter: "Width", specification: "625mm, 750mm, 1000mm, 1250mm, 1500mm, 2000mm" },
-                        { parameter: "Finish", specification: "2B, No.4, No.8, BA, HR, CR" }
-                    ],
+                    // specs: [
+                    //     { parameter: "Material Grades", specification: "304, 304L, 316, 316L, 310, 321, alloy & boiler quality grades" },
+                    //     { parameter: "Thickness", specification: "0.3mm - 50mm (standard); other thicknesses available" },
+                    //     { parameter: "Width", specification: "625mm, 750mm, 1000mm, 1250mm, 1500mm, 2000mm" },
+                    //     { parameter: "Finish", specification: "2B, No.4, No.8, BA, HR, CR" }
+                    // ],
                     productFeatures: [
-                        "Superior durability for structural and heavy-duty applications",
-                        "Excellent resistance to corrosion and thermal stress",
-                        "Easy to fabricate: suitable for cutting, welding, and shaping",
-                        "Usable in automotive, marine, chemical, construction, and energy industries",
-                        "Warranty offered by most suppliers depending on grade and application"
+                        " <b>S. S. Sheets & Plates</b>: as per ASTM A240, Grades TP 304, 304L, 304LN, 309, 309S, 309H, 310H, 316, 316L, 316H, 316LN, 316Ti, 317, 317L, 321, 321H, 347, 348, 348H, 409, 410, 420, 430, etc.",
+                        "→ Superior corrosion resistance, high temperature strength, and weldability.",
+                        // "",
+                        " <b>Alloy Steel Plates</b>: as per ASTM A387 Gr. 2, 5, 9, 11, 12 & 22 (Class 1 & 2), ASTM A204 Gr. A & B, DIN 17175 Gr. 15Mo3 & 16Mo3 with IBR Test Certificate.",
+                        "→ Designed for pressure vessels, boilers, and heat exchangers with high thermal resistance.",
+                        // "",
+                        " <b>Carbon Steel / Boiler Quality Plates</b>: as per IS 2062 / ASTM A36, Grades A, B & C, IS 2002 Gr. 1 & 2, ASTM A516 Gr. 60 & 70, ASTM A515 Gr.70.",
+                        "→ Excellent toughness and weldability for structural and fabrication work.",
+                        // "",
+                        " <b>Abrasion Resistant / Wear Resistant Plates</b>: Sailhard, Hardox, Sumihard, Jee Raex, Fora, Abrazo, Abrex, Xar, Nicrorud, Dillidur 360–900 BHN.",
+                        "→ High impact and wear resistance; used in mining, construction, and heavy machinery."
                     ],
                     applications: [
                         "Structural elements in buildings and bridges",
@@ -3672,28 +3679,29 @@
                     shortDescription: "High-performance rods, bars, and wires available in a range of nickel alloys, stainless steel, carbon steel, brass, bronze, and other high-grade materials for industrial and structural applications.",
                     image: "./images/RODS_BARS/Rods.jpg",
                     gallery: [
-                       "./images/RODS_BARS/bars.jpg",
-                       "./images/RODS_BARS/Rods.jpg",
+                        "./images/RODS_BARS/bars.jpg",
+                        "./images/RODS_BARS/Rods.jpg",
                     ],
                     features: [
-                        "Materials: High nickel alloys (Monel, Inconel, Hastalloy), Stainless steel, Carbon steel, Copper, Brass, Bronze, Aluminium, Titanium, Bismuth, High Speed Steel, Zinc, Lead",
-                        "Each rod, bar or wire is manufactured to ASTM and international material standards",
-                        "Available in shapes: rods, hex, square, wires, and billets",
-                        "Outstanding corrosion and thermal resistance, suitable for harsh conditions",
-                        "High mechanical strength and ductility"
+                        "<b>High Nickel Alloy</b>: Monel, Nickel, Inconel, Hastalloy, Copper, Brass, Bronze, Titanium, Tantalum, Bismuth, Aluminium, High Speed Steel, Zinc, Lead, etc.",
+                        "<b>Material Grade</b>: Stainless Steel, Nickel Alloys, Carbon Steel, Alloy Steel, IBR & Non-IBR.",
+                        "<b>Types</b>: Rods, Hex, Square, Wires, Billets etc.",
                     ],
-                    specs: [
-                        { parameter: "Available Grades", specification: "Stainless Steel (AISI 201, 202, 304, 316, 310 etc.), Nickel Alloys (Inconel, Monel), Carbon Steel" },
-                        { parameter: "Shapes", specification: "Round Rods, Hex Bars, Square Bars, Wires, Billets" },
-                        { parameter: "Diameter/Thickness", specification: "Wire: 1.2 mm to 12 mm; Rods/Bars: 5 mm to 100 mm" },
-                        { parameter: "Finish", specification: "Bright, Hot Rolled, Cold Drawn, Polished" }
-                    ],
+                    // specs: [
+                    //     { parameter: "Available Grades", specification: "Stainless Steel (AISI 201, 202, 304, 316, 310 etc.), Nickel Alloys (Inconel, Monel), Carbon Steel" },
+                    //     { parameter: "Shapes", specification: "Round Rods, Hex Bars, Square Bars, Wires, Billets" },
+                    //     { parameter: "Diameter/Thickness", specification: "Wire: 1.2 mm to 12 mm; Rods/Bars: 5 mm to 100 mm" },
+                    //     { parameter: "Finish", specification: "Bright, Hot Rolled, Cold Drawn, Polished" }
+                    // ],
                     productFeatures: [
-                        "High tensile and yield strength for structural and machinery applications",
-                        "Excellent corrosion and oxidation resistance even at elevated temperatures",
-                        "Easy fabrication: cutting, forming, welding, and machining possible",
-                        "Suitable for chemical, marine, oil & gas, automotive, aerospace, and energy industries",
-                        "Meets international engineering standards for metals"
+                        "<b>High Nickel Alloy</b>: Monel, Nickel, Inconel, Hastalloy, Copper, Brass, Bronze, Titanium, Tantalum, Bismuth, Aluminium, High Speed Steel, Zinc, Lead, etc.",
+                        "→ Exceptional resistance to corrosion, heat, and oxidation in demanding environments.",
+                        // "",
+                        "<b>Material Grade</b>: Stainless Steel, Nickel Alloys, Carbon Steel, Alloy Steel, IBR & Non-IBR.",
+                        "→ Covers a wide spectrum of industrial-grade materials for varied strength and thermal requirements.",
+                        // "",
+                        "<b>Types</b>: Rods, Hex, Square, Wires, Billets etc.",
+                        "→ Available in multiple shapes for flexible fabrication and engineering uses."
                     ],
                     applications: [
                         "Machinery and equipment manufacture",
@@ -3710,7 +3718,189 @@
                         "Americas: Argentina, Brazil, USA",
                         "Africa: Ghana, South Africa"
                     ]
-                }
+                },
+                67: {
+                    id: "product67",
+                    name: "Copper Tubes",
+                    shortDescription: "High-quality copper materials including DHP, ETP, DPA, and OFHC grades designed for superior electrical and thermal conductivity in industrial and architectural applications.",
+                    image: "./images/coper/copper-pipe.jpg",
+                    gallery: [
+                       "./images/coper/copper tube.jpg",
+                       "./images/coper/copper-pipe.jpg",
+                       "./images/coper/Copper-Tubing.webp",
+                    ],
+                    features: [
+                        "Grades: DHP Copper, ETP Copper, DPA Copper, OFHC Copper",
+                        "Applications in electrical, thermal, and mechanical systems",
+                        "Manufactured as per ASTM, ISS, and BSS standards",
+                        "Excellent ductility and corrosion resistance",
+                        "Available in tubes, rods, profiles, and wires",
+                        "Tested for chemical composition, hardness, and hydrostatic performance"
+                    ],
+                    specs: [
+                        { parameter: "Diameter Range", specification: "2mm to 200mm OD" },
+                        { parameter: "Wall Thickness", specification: "0.10mm to 15mm" },
+                        { parameter: "Length", specification: "Up to 10 meters straight, coils up to 25 meters" },
+                        { parameter: "Standard", specification: "ASTM / ISS / BSS / Custom specification" }
+                    ],
+                    productFeatures: [
+                        "Exceptional electrical and thermal conductivity",
+                        "High resistance to corrosion and fatigue",
+                        "Available in multiple forms: tubes, rods, profiles, and wires",
+                        "Fully tested: chemical, physical, hardness, and hydrostatic testing",
+                        "Ideal for heat exchangers, electrical conductors, and mechanical applications"
+                    ],
+                    applications: [
+                        "Electrical cables and conductors",
+                        "Heat exchangers and condensers",
+                        "Plumbing and industrial tubing",
+                        "Architectural and decorative applications"
+                    ]
+                },
+
+                68: {
+                    id: "product68",
+                    name: "Brass Tubes",
+                    shortDescription: "Durable and versatile brass products available in various compositions and mechanical strengths, ideal for decorative, electrical, and structural uses.",
+                    image: "./images/Brass/Brass-tubes.jpg",
+                    gallery: [
+                       "./images/Brass/Brass-tubes.jpg",
+                       "./images/Brass/High-Precision-Brass-Tubing.jpg",
+                    ],
+                    features: [
+                        "Compositions: 63/37 Brass, 70/30 Brass, Admiralty Brass, Aluminium Brass, and other specialized blends",
+                        "Manufactured under ASTM, ISS, and BSS standards",
+                        "Excellent machinability and corrosion resistance",
+                        "Available in rods, tubes, strips, wires, and profiles",
+                        "Tested for hardness, tensile strength, and dimensional accuracy"
+                    ],
+                    specs: [
+                        { parameter: "Material Grades", specification: "63/37, 70/30, Admiralty, Aluminium Brass" },
+                        { parameter: "Diameter", specification: "Up to 160mm for rods and tubes" },
+                        { parameter: "Shapes", specification: "Rods, Tubes, Profiles, Wires" }
+                    ],
+                    productFeatures: [
+                        "Excellent corrosion and dezincification resistance",
+                        "Superior surface finish suitable for precision components",
+                        "High thermal and electrical conductivity",
+                        "Tested under international standards for dimensional accuracy",
+                        "Widely used in hardware, marine, and electrical industries"
+                    ],
+                    applications: [
+                        "Valves, fittings, and fasteners",
+                        "Heat exchangers and condensers",
+                        "Decorative hardware and marine components"
+                    ]
+                },
+
+                69: {
+                    id: "product69",
+                    name: "Cupronickel",
+                    shortDescription: "High-strength Cupronickel alloys with superior resistance to seawater corrosion, ideal for marine, chemical, and condenser tube applications.",
+                    image: "./images/Cupronickel/Cupronickel-Images.jpg",
+                    gallery: [
+                          "./images/Cupronickel/Cupronickel-Image.jpg",
+                          "./images/Cupronickel/Cupronickel-Images.jpg",
+                    ],
+                    features: [
+                        "Grades: 95/5 Alloy, 90/10 Alloy, 70/30 Alloy",
+                        "Excellent resistance to seawater corrosion and erosion",
+                        "Ideal for heat exchangers, condensers, and desalination units",
+                        "Manufactured under ASTM, ISS, and BSS standards",
+                        "Available in tubes, rods, and strips"
+                    ],
+                    specs: [
+                        { parameter: "Composition", specification: "Cu-Ni 90/10, 70/30, 95/5" },
+                        { parameter: "Outer Diameter", specification: "2mm to 200mm" },
+                        { parameter: "Wall Thickness", specification: "0.10mm to 15mm" },
+                        { parameter: "Length", specification: "Up to 10 meters straight; coils up to 25 meters" }
+                    ],
+                    productFeatures: [
+                        "High corrosion resistance in seawater and brine environments",
+                        "Excellent thermal conductivity for condenser applications",
+                        "High mechanical strength and ductility",
+                        "Non-magnetic and easy to fabricate",
+                        "Fully tested for pressure and hydrostatic integrity"
+                    ],
+                    applications: [
+                        "Desalination plants and shipbuilding",
+                        "Heat exchangers and condensers",
+                        "Marine pipelines and fittings"
+                    ]
+                },
+
+                70: {
+                    id: "product70",
+                    name: "Bronzes",
+                    shortDescription: "High-performance bronze alloys including phosphorous and aluminium bronze, offering superior strength, wear resistance, and corrosion protection.",
+                    image: "./images/NonFerrous/bronze.jpg",
+                    gallery: [
+                        "./images/NonFerrous/bronze_tubes.jpg",
+                        "./images/NonFerrous/bronze_rods.jpg"
+                    ],
+                    features: [
+                        "Types: Phosphorous Bronze, Aluminium Bronze, Gun Metal",
+                        "Grades: Phosphorous Bronze A B1 / A B2 Bush Round",
+                        "High wear resistance and load-bearing capacity",
+                        "Manufactured as per ASTM and ISS standards",
+                        "Excellent machinability and dimensional stability"
+                    ],
+                    specs: [
+                        { parameter: "Shapes", specification: "Rods, Bushes, Tubes, Profiles" },
+                        { parameter: "Diameter Range", specification: "Up to 160mm" },
+                        { parameter: "Standard", specification: "ASTM / ISS / BSS" }
+                    ],
+                    productFeatures: [
+                        "Superior anti-friction and bearing properties",
+                        "High tensile strength and elongation",
+                        "Corrosion resistance in marine and industrial conditions",
+                        "Ideal for bushings, bearings, and wear-resistant parts"
+                    ],
+                    applications: [
+                        "Pump and valve components",
+                        "Bearings, bushings, and sleeves",
+                        "Marine propeller and mechanical parts"
+                    ]
+                },
+
+                71: {
+                    id: "product71",
+                    name: "Copper Tubes & Sections",
+                    shortDescription: "Copper tubes, rods, profiles, and wires precision-engineered for high conductivity, corrosion resistance, and pressure handling in critical systems.",
+                    image: "./images/NonFerrous/copper_tube_section.jpg",
+                    gallery: [
+                        "./images/NonFerrous/copper_tubes.jpg",
+                        "./images/NonFerrous/copper_profiles.jpg"
+                    ],
+                    features: [
+                        "Tubes: 2mm OD to 200mm OD with wall thickness from 0.10mm to 15mm",
+                        "Length: Up to 10 meters straight; coils up to 25 meters in copper, brass & cupronickel",
+                        "Rods: Available up to 160mm diameter",
+                        "Strips & Profiles: Custom sections as per client specification",
+                        "Wires: Copper wires up to 42 SWG in bright annealed condition",
+                        "S.E. Wires: Super enamelled copper wires up to 42 SWG",
+                        "Complies with ASTM, ISS, and BSS standards",
+                        "Testing includes: chemical, dimensional, hydrostatic, and NDT"
+                    ],
+                    specs: [
+                        { parameter: "Outer Diameter", specification: "2mm – 200mm" },
+                        { parameter: "Wall Thickness", specification: "0.10mm – 15mm" },
+                        { parameter: "Wire Gauge", specification: "Up to 42 SWG" },
+                        { parameter: "Testing", specification: "Chemical, Hardness, Hydrostatic, NDT (Eddy Current)" }
+                    ],
+                    productFeatures: [
+                        "High conductivity and excellent surface finish",
+                        "Precise tolerance and consistent wall thickness",
+                        "Comprehensive quality testing ensures leak-proof performance",
+                        "Custom manufacturing available for profiles and sections"
+                    ],
+                    applications: [
+                        "HVAC and refrigeration systems",
+                        "Heat exchangers and condensers",
+                        "Electrical conductors and bus bars",
+                        "Instrumentation and industrial piping"
+                    ]
+                },
 
 
             };
@@ -3779,9 +3969,16 @@
                     });
 
                     // Update specifications table
+                   if (!product.specs || product.specs.length === 0) {
+                        const specTableHead = document.getElementById("product-spec-table-header");
+                        if (specTableHead) {
+                            specTableHead.style.display = "none";
+                        }
+                    }
+
                     const specTableBody = document.getElementById("product-spec-table");
                     specTableBody.innerHTML = "";
-                    product.specs.forEach(spec => {
+                    product?.specs?.forEach(spec => {
                         const tr = document.createElement("tr");
                         tr.innerHTML = `<td><strong>${spec.parameter}</strong></td><td>${spec.specification}</td>`;
                         specTableBody.appendChild(tr);
