@@ -1000,6 +1000,9 @@ body {
     width: 10px;
     height: 10px;
   }
+  .mobileTextCenter {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
