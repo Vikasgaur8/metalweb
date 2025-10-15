@@ -1211,11 +1211,21 @@ track.addEventListener("transitionend", () => {
 });
 
 // Update slide width and position on resize
+// window.addEventListener("resize", () => {
+//   slideWidth = window.innerWidth; /* CHANGE this line */
+//   threshold = slideWidth / 4;
+//   items.style.left = -((index + 1) * slideWidth) + "px";
+// });
+
 window.addEventListener("resize", () => {
-  slideWidth = window.innerWidth; /* CHANGE this line */
-  threshold = slideWidth / 4;
-  items.style.left = -((index + 1) * slideWidth) + "px";
+  // Get the new slide width including margin
+  const slide = indSlides[0];
+  const style = window.getComputedStyle(slide);
+  const margin = parseInt(style.marginLeft) + parseInt(style.marginRight);
+  slideWidth = slide.offsetWidth + margin;
+  setPosition(currentPos); // Re-center after resize
 });
+
 
 // Auto slide every 1800ms (adjust as needed)
 setInterval(() => {
