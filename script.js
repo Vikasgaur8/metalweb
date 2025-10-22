@@ -172,7 +172,7 @@ function initContactForm() {
 
   if (contactForm) {
     // Initialize EmailJS (add your Public Key)
-    emailjs.init("tTrhjg4UFCQRH_7p-");
+    emailjs.init("KkebE2LnQ0U33dZLM");
 
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -190,7 +190,7 @@ function initContactForm() {
         // Send using EmailJS
         console.log("from-->>",formValues)
         emailjs
-          .send("service_2q74q5o", "template_gca1afq", formValues)
+          .send("service_tjpxolm", "template_fq38jjg", formValues)
           .then(() => {
             showMessage(
               "Message sent successfully! We’ll contact you soon.",
